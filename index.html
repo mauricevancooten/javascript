@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+
+<p id="p2">print this text...</p>
+
+<p id="p3">print this text...</p>
+
+<p id="p4">print this text...</p>
+
+<p class="indicator">print this text...</p>	
+
+<button id="click">Print</button>
+
+<button id="add-class">Add Class</button>
+
+<script>
+
+	// Get element by id and change color.
+
+	document.getElementById("p2").style.color = "red";
+
+	// Get element by class name and change color.
+
+	var x = document.getElementsByClassName("indicator");
+	for (var i = 0; i < x.length; i++) {
+    x[i].style.backgroundColor = "pink";
+	}
+
+	// On click functionality
+
+	window.onclick = changeColor;
+
+	function changeColor() {
+		document.getElementById("p2").style.backgroundColor = "pink";
+	};
+
+	// On click functionality using ID's
+
+	document.getElementById("click").onclick = changeColor;
+
+	function changeColor() {
+		document.getElementById("p3").style.color = "purple";
+	};
+
+	// On click functionality using ID's adding a class
+
+	document.getElementById("add-class").onclick = accessiblyHidden;
+
+	function accessiblyHidden() {
+		document.getElementById("p4").classList.add("foo");
+	};
+
+	http://callmenick.com/post/jquery-functions-javascript-equivalents
+
+</script>
+	
+</body>
+</html>
