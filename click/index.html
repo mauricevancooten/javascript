@@ -6,32 +6,17 @@
 </head>
 <body>
 
-<p id="p2">print this text...</p>
+	<p class="indicator">print this text...</p>	
 
-<p id="p3">print this text...</p>
+	<p class="indicator-2">print this text...</p>
 
-<p id="p4">print this text...</p>
+	<button id="click">Print</button>
 
-<p class="indicator">print this text...</p>	
+	<button id="add-class">Add Class</button>
 
-<button id="click">Print</button>
+	<script>
 
-<button id="add-class">Add Class</button>
-
-<script>
-
-	// Get element by id and change color.
-
-	document.getElementById("p2").style.color = "red";
-
-	// Get element by class name and change color.
-
-	var x = document.getElementsByClassName("indicator");
-	for (var i = 0; i < x.length; i++) {
-    x[i].style.backgroundColor = "pink";
-	}
-
-	// On click functionality
+		// On click functionality
 
 	window.onclick = changeColor;
 
@@ -55,9 +40,8 @@
 		document.getElementById("p4").classList.add("foo");
 	};
 
-	http://callmenick.com/post/jquery-functions-javascript-equivalents
 
-</script>
+	</script>
 	
 </body>
 </html>
