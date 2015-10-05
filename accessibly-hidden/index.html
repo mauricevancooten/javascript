@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Accessibly Hiding Content</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+	<ul>
+		<li class="show"><a href="#">Contact us</a></li>
+	</ul>
+
+	<div class="enquiries">
+		<p>some content to show and hide</p>
+	</div>
+
+	<script>
+
+	var button = document.querySelector('.show');
+	var text = document.querySelector('.enquiries');
+	visible = false;
+
+	text.classList.add("accessibly-hidden");
+
+	button.addEventListener("click", function(){
+		
+		if ( visible ) {
+
+			text.classList.add("accessibly-hidden");
+		} else {
+			text.classList.remove("accessibly-hidden");
+		}
+
+		visible = ! visible;
+
+
+	});
+
+
+
+	</script>
+	
+</body>
+</html>
