@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+
+	<p class="one">Click window and add color to this element.</p>	
+
+	<p class="two">print this text...</p>
+
+		<p class="three">print this text...</p>
+
+	<button class="click">Click me</button>
+
+	<button class="click-2">Click me to add a class</button>
+
+	<script>
+
+	// On click functionality
+
+	el = document.querySelector(".one");
+
+	window.addEventListener("click", function(){
+		el.style.backgroundColor = "pink";
+	});
+
+	// On click functionality using classes.
+
+	el2 = document.querySelector(".two");
+
+	document.querySelector(".click").addEventListener("click", function(){
+		el2.style.backgroundColor = "pink";
+	});
+
+	// On click functionality using classes.
+
+	el3 = document.querySelector(".three");
+
+	document.querySelector(".click-2").addEventListener("click", function(){
+		el3.classList.add("foo");
+	});
+
+
+	
+
+
+	</script>
+	
+</body>
+</html>
