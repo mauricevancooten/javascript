@@ -22,23 +22,27 @@
 
 	<script>
 
-	var open = document.querySelector('.show'),
+	document.addEventListener('DOMContentLoaded', function(){
+
+		var open = document.querySelector('.show'),
 		close = document.querySelector('.hide'),
 		modal = document.querySelector('.overlay')
 		
 
-	modal.classList.add("accessibly-hidden");
+		modal.classList.add("accessibly-hidden");
 
-	close.addEventListener("click", function(){
+		close.addEventListener("click", function(){
 
 			modal.classList.add("accessibly-hidden");
 		
-	});
+		});
 
-	open.addEventListener("click", function(){
+		open.addEventListener("click", function(){
 		
 			modal.classList.remove("accessibly-hidden");
 		
+		});
+   
 	});
 
 	</script>
