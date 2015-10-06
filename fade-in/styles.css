@@ -20,14 +20,3 @@
     -webkit-animation-play-state: paused;
   animation-play-state: paused;
 }
-
-.btn {
-  background: #ccc;
-  border-radius: 3px;
-  display: inline-block;
-  padding: 5px;
-}
-
-body {
-  padding: 40px;
-}
