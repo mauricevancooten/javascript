@@ -8,7 +8,7 @@
 <body>
 
 	
-	<button class="show"><a href="#">Open</button>
+	<button class="show">Open</button>
 
 
 	<div class="overlay">
@@ -26,7 +26,8 @@
 
 		var open = document.querySelector('.show'),
 		close = document.querySelector('.hide'),
-		modal = document.querySelector('.overlay')
+		modal = document.querySelector('.overlay'),
+		body = document.querySelector('body');
 		
 
 		modal.classList.add("accessibly-hidden");
@@ -40,6 +41,8 @@
 		open.addEventListener("click", function(){
 		
 			modal.classList.remove("accessibly-hidden");
+			top = body.scrollTop;
+			modal.style.top = top + 'px';
 		
 		});
    
