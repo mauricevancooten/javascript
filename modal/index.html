@@ -7,48 +7,92 @@
 </head>
 <body>
 
-	
-	<button class="show">Open</button>
+<!DOCTYPE html>
 
+<html>
 
-	<div class="overlay">
-		<div>
-			<p>some content to show and hide</p>
+	<head>
 
-			<button class="hide">Close</button>
-			
-		</div>
-	</div>
-
-	<script>
-
-	document.addEventListener('DOMContentLoaded', function(){
-
-		var open = document.querySelector('.show'),
-		close = document.querySelector('.hide'),
-		modal = document.querySelector('.overlay'),
-		body = document.querySelector('body');
+		<meta charset="utf-8">	
+		<title>Layout</title>
+		<meta name="robots" content="noindex, nofollow">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="styles.css">
 		
+	</head>
 
-		modal.classList.add("accessibly-hidden");
+	<body>
 
-		close.addEventListener("click", function(){
+		<header>
+
+			<h1>Site Name</h1>
+
+		</header> 
+
+		<div class="wrapper">
+
+			<div class="container">
+
+				<h2>Heading</h2>
+
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+
+				<button class="show">Open</button>
+
+
+				<div class="overlay">
+
+					<div>
+
+						<p>some content to show and hide</p>
+
+						<button class="hide">Close</button>
+						
+					</div>
+
+				</div> <!-- .overlay-->
+
+
+			</div> <!-- .container-->
+
+		</div> <!-- .wrapper-->
+
+		<footer>
+
+			<small>Powered by <a href="http://github.com">Github</small>
+
+		</footer> 
+
+		<script>
+
+		document.addEventListener('DOMContentLoaded', function(){
+
+			var open = document.querySelector('.show'),
+			close = document.querySelector('.hide'),
+			modal = document.querySelector('.overlay'),
+			body = document.querySelector('body');
+			
 
 			modal.classList.add("accessibly-hidden");
-		
+
+			close.addEventListener("click", function(){
+
+				modal.classList.add("accessibly-hidden");
+			
+			});
+
+			open.addEventListener("click", function(){
+			
+				modal.classList.remove("accessibly-hidden");
+				top = body.scrollTop;
+				modal.style.top = top + 'px';
+			
+			});
+	   
 		});
 
-		open.addEventListener("click", function(){
-		
-			modal.classList.remove("accessibly-hidden");
-			top = body.scrollTop;
-			modal.style.top = top + 'px';
-		
-		});
-   
-	});
+		</script>
 
-	</script>
-	
-</body>
+	</body>
+
 </html>
