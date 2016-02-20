@@ -1,0 +1,92 @@
+/*
+
+Title: Stylesheet Template
+
+Author: Maurice van Cooten
+
+*/
+
+body {
+	background: #eeeeee;
+	font-size: 16px;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	margin:0;
+}
+
+a {
+	color:crimson;
+	text-decoration:none;
+}
+
+a:hover {
+	color:red;
+}
+
+/* Layout
+------------------------------------------*/
+
+header,
+.container,
+footer {
+	margin: 0 auto;
+	width:88%;
+	max-width: 960px;
+}
+
+.wrapper {
+	padding:1em 0;
+	background: #ffffff;	
+}
+
+/* Animation
+------------------------------------------*/
+
+.deck { 
+  max-width: 500px;
+  min-height: 260px;
+  margin:0 auto;
+  position: relative;
+  perspective: 800px;
+}
+.card {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+}
+
+.card div {
+  margin: 0;
+  box-shadow: 2px 2px 5px rgba(0,0,0,.3);
+  padding:.5em;
+  border-radius:32px;
+  box-sizing:border-box;
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  text-align:center;
+  font-size:2em;
+  display:flex;
+  justify-content:center;
+  align-items: center;
+}
+
+.card .back {
+ color:green;
+ transform: rotateX( 180deg );
+}
+
+.card.flipped {
+  transform: rotateX( 180deg );
+}
+
+.card { 
+	transform-origin: center; 
+}
+
+.card.flipped {
+  transform: translateY( 0 ) rotateX( -180deg );
+}

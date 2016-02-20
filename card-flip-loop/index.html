@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+
+		<meta charset="utf-8">	
+		<title>Multiple Cards Flip</title>
+		<meta name="robots" content="noindex, nofollow">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="styles.css">
+		
+	</head>
+
+	<body>
+
+		<header>
+
+			<h1>Multiple Cards Flip</h1>
+
+		</header> 
+
+		<div class="wrapper">
+
+			<div class="container">
+
+				<div class="deck">
+
+					<div id="card"class="card">
+	    			<div class="front"><p>What’s meant by an AMP stack?</p></div>
+	    			<div class="back"><p>Apache, MySQL and PHP</p></div>
+	  			</div>
+
+  			</div>
+
+  		<button class="flip" data-targetid="card">flip</button>
+
+  			<div class="deck">
+
+					<div id="card2" class="card">
+	    			<div class="front"><p>Apache in web development is an?</p></div>
+	    			<div class="back"><p>HTTP server</p></div>
+	  			</div>
+
+  			</div>
+
+  		<button class="flip" data-targetid="card2">flip</button>
+
+			</div> <!-- .container-->
+
+		</div> <!-- .wrapper-->
+
+		<footer>
+
+			<small>Powered by <a href="http://github.com">Github</small>
+
+		</footer> 
+
+	</body>
+
+	<script>
+
+	document.addEventListener('DOMContentLoaded', function(){
+		
+		var flip = document.getElementsByClassName('flip'),
+		flipped = false;
+
+		for ( i = 0; i < flip.length; i++) {
+			flip[i].addEventListener( 'click', function(){
+
+				var cardID = this.dataset.targetid;
+				var card = document.getElementById(cardID);
+				
+				if (card.classList.contains('flipped')) {
+	    
+	   			card.classList.remove('flipped');
+	   
+	  		} else {
+	    
+	    		card.classList.add('flipped');
+	  		}
+
+  		});
+
+		}
+
+	});
+
+	</script>
+
+
+
+</html>
