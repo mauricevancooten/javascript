@@ -2,49 +2,35 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>Event Listener</title>
+	<link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-	<p class="one">Click window and add color to this element.</p>	
+	<h1>Event Triggered</h1>	
 
-	<p class="two">print this text...</p>
-
-		<p class="three">print this text...</p>
-
-	<button class="click">Click me</button>
-
-	<button class="click-2">Click me to add a class</button>
+	<button class="show">Click</button>
 
 	<script>
 
-	// On click functionality
+		document.addEventListener('DOMContentLoaded', function(){
 
-	el = document.querySelector(".one");
+			(function(){ // IFFE
 
-	window.addEventListener("click", function(){
-		el.style.backgroundColor = "pink";
-	});
+				var el = document.querySelector('h1'),
+				button = document.querySelector('.show');
 
-	// On click functionality using classes.
+				el.classList.add('hide-text');
 
-	el2 = document.querySelector(".two");
+				button.addEventListener('click', function(){
 
-	document.querySelector(".click").addEventListener("click", function(){
-		el2.style.backgroundColor = "pink";
-	});
+					el.classList.remove('hide-text');
 
-	// On click functionality using classes.
+				});  	
 
-	el3 = document.querySelector(".three");
+			})();
 
-	document.querySelector(".click-2").addEventListener("click", function(){
-		el3.classList.add("foo");
-	});
-
-
-	
-
+		});
 
 	</script>
 	
