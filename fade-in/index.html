@@ -3,17 +3,17 @@
 <html>
 
 	<head>
-		<meta charset="utf-8">
-		<title>JavaScript Show on Scroll</title>
+		<meta charset="utf-8">	
+		<title>Anchored Links</title>
 		<meta name="robots" content="noindex, nofollow">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="styles.css">		
+		<link rel="stylesheet" href="styles.css">	
 	</head>
 
 	<body>
 
 		<div class="sticky js-fade fade-in is-paused">
-		
+
 			<header>
 
 				<nav>
@@ -25,7 +25,7 @@
 						<li><a href="#junk">Junk</a></li>
 						<li><a href="#bits">Bits</a></li>
 					</ul>
-					
+
 				</nav>
 
 			</header>
@@ -38,7 +38,7 @@
 
 				<section id="things">
 
-					<h1>JavaScript Show on Scroll</h1>
+					<h1>Show on Scroll</h1>
 
 					<h2>Things</h2>
 
@@ -108,23 +108,24 @@
 
 		<footer>
 
-			<small>Powered by <a href="http://github.com">Github</small>
+			<small>Powered by <a href="http://github.com">Github</a></small>
 
-		</footer> 
+		</footer>
 
 		<script>
 
-			document.addEventListener('DOMContentLoaded', function(){
+		document.addEventListener('DOMContentLoaded', function () {
 
-	    	var el = document.querySelector('.js-fade');
+			var el = document.querySelector('.js-fade');
 
-				window.addEventListener('scroll', function(){
-				  el.classList.remove('is-paused');
-				});
-
+			window.addEventListener('scroll', function () {
+				el.classList.remove('is-paused');
 			});
+
+		});
 
 		</script>
 
-</body>
+	</body>
+
 </html>
