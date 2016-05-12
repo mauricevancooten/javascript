@@ -16,7 +16,7 @@
 
 		<header>
 
-			<h1>JavaScript Accessibly Hidden</h1>
+			<h1>JavaScript Toggle</h1>
 
 			<nav>
 				<ul>
@@ -82,24 +82,20 @@
 
 		document.addEventListener('DOMContentLoaded', function(){
 
-			var button = document.querySelector('.show'),
-				text = document.querySelector('.enquiries'),
-				visible = false;
+			(function(){ // IIFE
 
-			text.classList.add("accessibly-hidden");
+				var button = document.querySelector('.show'),
+					text = document.querySelector('.enquiries');
 
-			button.addEventListener("click", function(){
-				
-				if ( visible ) {
+				text.classList.add("accessibly-hidden");
 
-					text.classList.add("accessibly-hidden");
-				} else {
-					text.classList.remove("accessibly-hidden");
-				}
+				button.addEventListener("click", function(){
+					
+					text.classList.toggle("accessibly-hidden");
 
-				visible = ! visible;
+				});
 
-			});
+			})();
 
 		});
 
