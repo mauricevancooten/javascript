@@ -35,27 +35,12 @@
 
 				<div class="enquiries">
 					
-					<div class="person" itemscope itemtype="http://schema.org/Person">
-	  
-	    				<span itemprop="name"><strong>Maurice van Cooten</strong></span>
-
-	    				
-	    				<p><span itemprop="jobTitle">Designer</span></p>
-
-	    
-	    				<div class="tel">
-	      					<span itemprop="telephone">09 833 8383</span>
-	    				</div>
-	    			
-	    				<div class="tel">
-	      					<span itemprop="telephone">021 035 7452</span>
-	    				</div>
-	    			
-	    				<div class="email">
-	     				 	<a href="mailto:maurice@minus.nz" itemprop="email">maurice@minus.nz</a> 
-						</div>
-	 			
-	 				</div> <!-- .person -->
+	    		<p>Maurice van Cooten<br>
+	    			Designer<br>
+	    			09 833 8383<br>
+	    			021 035 7452<br>
+	    			<a href="mailto:maurice@minus.nz" itemprop="email">maurice@minus.nz</a> 
+	    		</p>
 
 				</div> <!-- .enquiries -->
 
@@ -87,11 +72,11 @@
 				var button = document.querySelector('.show'),
 					text = document.querySelector('.enquiries');
 
-				text.classList.add("accessibly-hidden");
+				text.classList.add('hide-text');
 
-				button.addEventListener("click", function(){
+				button.addEventListener('click', function(){
 					
-					text.classList.toggle("accessibly-hidden");
+					text.classList.toggle('hide-text');
 
 				});
 

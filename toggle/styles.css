@@ -67,7 +67,7 @@ nav ul li a:hover {
 /* Accessibly Hidden
 ------------------------------------------*/
 
-.accessibly-hidden {
+.hide-text {
 position: absolute;
 left: -999em;
 }
