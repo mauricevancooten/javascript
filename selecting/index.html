@@ -9,73 +9,39 @@
 
 	<h1>Get element by tag name</h1>
 
-	<h2>Get element by query Selector</h2>
+	<p id="foo">Get element by ID.</p>
 
-	<p id="one">Get elements by ID.</p>
+	<p class="bar">Get element by class name.</p>
 
-	<p id="two">Get element by query Selector when it's an ID.</p>
+	<p class="quux">Add class</p>
 
-	<p class="three">Get elements by Class.</p>
-
-	<p class="four">Get element by query Selector when it's a class.</p>
-
-	<p class="five">Setting style properties.</p>
-
-	<p class="six">Setting style properties at once.</p>
-
-	<p class="seven">Add a class.</p>
+	<p class="baz">Add class</p>
 
 	<script>
 
-		// alert('Hello World!');
+		document.addEventListener('DOMContentLoaded', function(){
 
-		// Get element by tag name and change color.
+		  // Get element by tag name
 
-		var x = document.getElementsByTagName("h1");
-		for (var i = 0; i < x.length; i++) {
-	    x[i].style.color = "red";
-		}
+			document.querySelector('h1').style.backgroundColor = 'pink';
 
-		// Get element by tag name and change color using query selector.
+			// Get element by id
 
-		document.querySelector('h2').style.backgroundColor = "pink";
+			document.querySelector('#foo').style.backgroundColor = 'pink';
 
+			// Get element by class name
 
-		// Get element by id and change color.
+			document.querySelector('.bar').style.backgroundColor = 'pink';
 
-		document.getElementById("one").style.color = "red";
+			// Apply multiple CSS statements at once
 
-		// Get element by ID and change color using query selector.
+			document.querySelector('.quux').style.cssText = 'background: pink; color: red;';
 
-		document.querySelector('#two').style.backgroundColor = "pink";
+			// Apply a class
 
+			document.querySelector('.baz').classList.add("foo");	
 
-		// Get element by class name and change color.
-
-		var x = document.getElementsByClassName("three");
-		for (var i = 0; i < x.length; i++) {
-	    x[i].style.color = "red";
-		}
-
-		// Get element by class name and change color using query selector.
-
-		document.querySelector('.four').style.backgroundColor = "pink";
-
-		// Applying multiple CSS statements to an element.
-
-		var el = document.querySelector('.five')
-
-		el.style.backgroundColor = "pink";
-		el.style.color = "red";
-
-
-		// Applying multiple CSS statements at once.
-
-		document.querySelector('.six').style.cssText = 'background: pink; color: red;';
-
-		// Apply a class
-
-		document.querySelector('.seven').classList.add("foo");
+		});
 
 	</script>
 	
