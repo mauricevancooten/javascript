@@ -1,4 +1,4 @@
-# Javascript
+# JavaScript
 
 Javascript examples.
 
