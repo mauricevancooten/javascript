@@ -51,7 +51,7 @@ footer {
      background: rgba(0,0,0,.5);
 }
 
-.hide-text {
+.js .hide-text {
 	position:absolute;
 	left: -999em;
 }
