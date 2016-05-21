@@ -1,0 +1,117 @@
+/*
+
+Title: Stylesheet Template
+
+Author: Maurice van Cooten
+
+*/
+
+body {
+	background: #eeeeee;
+	font-size: 16px;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	margin:0;
+}
+
+a {
+	color: crimson;
+	text-decoration:none;
+}
+
+a:hover {
+	color: red;
+}
+
+/* Layout
+------------------------------------------*/
+
+header,
+.container,
+footer {
+	margin: 0 auto;
+	width:88%;
+	max-width: 960px;
+}
+
+.wrapper {
+	background: #ffffff;
+	padding:1em 0;
+}
+
+/* Navigation
+------------------------------------------*/
+
+nav ul {
+	padding:0;
+	list-style:none;
+	border-top:1px solid #ffffff;
+	margin-bottom:0;
+}
+
+nav ul li a {
+	background:#cccccc;
+	padding: .5em 1em;
+	display:block;
+	text-align:center;
+	transition: all 1s;
+	border-bottom:1px solid #ffffff;
+}
+
+nav ul li a:hover {
+	background:pink;
+}
+
+.hamburger {
+	float:right;
+	background:url(images/hamburger.svg);
+	width:32px;
+	height:32px;
+}
+
+.hamburger span {
+	position:absolute;
+	margin:-999em;
+}
+
+.accessibly-hidden {
+	position: absolute; 
+	left: -999em;
+	}
+
+@media screen and (min-width:600px) {
+
+	.hamburger {
+		display:none;
+	}
+
+	.accessibly-hidden {
+	position: static; 
+	margin:0 auto;
+	}
+
+	nav ul {
+		display:flex;
+		width:88%;
+		max-width:960px;
+		margin:0 auto;
+		border-top:0;
+	}
+
+	nav ul li {
+		margin-right:.5em;
+	}
+
+	nav ul li a {
+		border-bottom:0;
+
+	}
+
+	.hamburger span {
+		position: absolute; 
+		left: -999em;
+	}
+
+} /*Leave here*/
+
+
+
