@@ -3,37 +3,55 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Event Listener</title>
-	<link rel="stylesheet" href="styles.css">
 	<meta name="robots" content="noindex, nofollow">
+	<link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-	<h1>Event Triggered</h1>	
+	<header>
 
-	<button class="show">Click</button>
+			<h1>Event Listener</h1>
 
-	<script>
+	</header>
 
-		document.addEventListener('DOMContentLoaded', function(){
+		<div class="wrapper">
 
-			(function(){ // IIFE
+			<div class="container">
 
-				var el = document.querySelector('h1'),
-				button = document.querySelector('.show');
+				<button class="show">Click</button>
 
-				el.classList.add('hide-text');
+			</div> <!-- .container-->
 
-				button.addEventListener('click', function(){
+		</div> <!-- .wrapper-->
 
-					el.classList.remove('hide-text');
+		<footer>
 
-				});  	
+			<small>Powered by NGINX</small>
 
-			})();
+		</footer>
 
-		});
+		<script>
 
-	</script>
-	
-</body>
+			document.addEventListener('DOMContentLoaded', function(){
+
+				(function(){ // IIFE
+
+					var el = document.querySelector('h1'),
+					button = document.querySelector('.show');
+
+					el.classList.add('hide-text');
+
+					button.addEventListener('click', function(){
+
+						el.classList.remove('hide-text');
+
+					});  	
+
+				})();
+
+			});
+
+		</script>
+		
+	</body>
 </html>

@@ -1,50 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Selecting</title>
-	<link rel="stylesheet" href="styles.css">
-	<meta name="robots" content="noindex, nofollow">
-</head>
-<body>
+	<head>
+		<meta charset="UTF-8">
+		<title>Selecting</title>
+		<meta name="robots" content="noindex, nofollow">
+		<link rel="stylesheet" href="styles.css">
+	</head>
 
-	<h1>Get element by tag name</h1>
+	<body>
 
-	<p id="foo">Get element by ID.</p>
+		<header>
 
-	<p class="bar">Get element by class name.</p>
+			<h1>JavaScript Selecting</h1>
 
-	<p class="quux">Add class</p>
+		</header>
 
-	<p class="baz">Add class</p>
+		<div class="wrapper">
 
-	<script>
+			<div class="container">
 
-		document.addEventListener('DOMContentLoaded', function(){
+				<p id="foo">Get element by ID.</p>
 
-		  // Get element by tag name
+				<p class="bar">Get element by class name.</p>
 
-			document.querySelector('h1').style.backgroundColor = 'pink';
+				<p class="quux">Add class</p>
 
-			// Get element by id
+				<p class="baz">Add class</p>
 
-			document.querySelector('#foo').style.backgroundColor = 'pink';
+			</div> <!-- .container-->
 
-			// Get element by class name
+		</div> <!-- .wrapper-->
 
-			document.querySelector('.bar').style.backgroundColor = 'pink';
+		<footer>
 
-			// Apply multiple CSS statements at once
+			<small>Powered by NGINX</small>
 
-			document.querySelector('.quux').style.cssText = 'background: pink; color: red;';
+		</footer>
 
-			// Apply a class
+		<script>
 
-			document.querySelector('.baz').classList.add("foo");	
+			document.addEventListener('DOMContentLoaded', function(){
 
-		});
+			  // Get element by tag name
 
-	</script>
+				document.querySelector('h1').style.backgroundColor = 'pink';
+
+				// Get element by id
+
+				document.querySelector('#foo').style.backgroundColor = 'pink';
+
+				// Get element by class name
+
+				document.querySelector('.bar').style.backgroundColor = 'pink';
+
+				// Apply multiple CSS statements at once
+
+				document.querySelector('.quux').style.cssText = 'background: pink; color: red;';
+
+				// Apply a class
+
+				document.querySelector('.baz').classList.add("foo");	
+
+			});
+
+		</script>
 	
-</body>
+	</body>
 </html>
