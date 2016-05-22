@@ -2,54 +2,77 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>Timing Events</title>
+	<meta name="robots" content="noindex, nofollow">
+	<link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<div class="one">
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur dolor, accusamus quaerat commodi consectetur eligendi ipsam iste nemo unde, cum, nostrum. Veritatis explicabo commodi quisquam, veniam vero amet cum nulla. </p>
-</div>
+	<header>
 
-<div class="two">
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur dolor, accusamus quaerat commodi consectetur eligendi ipsam iste nemo unde, cum, nostrum. Veritatis explicabo commodi quisquam, veniam vero amet cum nulla. </p>
-</div>
+			<h1>JavaScript Timing Events</h1>
 
-<div class="three">
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur dolor, accusamus quaerat commodi consectetur eligendi ipsam iste nemo unde, cum, nostrum. Veritatis explicabo commodi quisquam, veniam vero amet cum nulla. </p>
-</div>
+		</header>
 
-<script src="velocity.js"></script>
+		<div class="wrapper">
 
-<script>
+			<div class="container">
+
+				<div class="one">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur dolor, accusamus quaerat commodi consectetur eligendi ipsam iste nemo unde, cum, nostrum. Veritatis explicabo commodi quisquam, veniam vero amet cum nulla. </p>
+				</div>
+
+				<div class="two">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur dolor, accusamus quaerat commodi consectetur eligendi ipsam iste nemo unde, cum, nostrum. Veritatis explicabo commodi quisquam, veniam vero amet cum nulla. </p>
+				</div>
+
+				<div class="three">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur dolor, accusamus quaerat commodi consectetur eligendi ipsam iste nemo unde, cum, nostrum. Veritatis explicabo commodi quisquam, veniam vero amet cum nulla. </p>
+				</div>
+
+			</div> <!-- .container-->
+
+		</div> <!-- .wrapper-->
+
+		<footer>
+
+			<small>Powered by NGINX</small>
+
+		</footer>
+
+		<script src="velocity.js"></script>
+
+		<script>
+			
+			document.addEventListener('DOMContentLoaded', function () {
+
+				(function (){ // IIFE
+
+					var el = document.querySelector('.one'),
+					el2 = document.querySelector('.two'),
+					el3 = document.querySelector('.three');
+
+					Velocity(el, {opacity:0}, {display:'none'});
+					Velocity(el2, {opacity:0}, {display:'none'});
+					Velocity(el3, {opacity:0}, {display:'none'});
+
+					setTimeout( function () {
+						Velocity(el, {opacity:1}, {display:'block'});
+					}, 3000);
+
+					setTimeout( function () {
+						Velocity(el2, {opacity:1}, {display:'block'});
+					}, 5000);
+
+					setTimeout( function () {
+						Velocity(el3, {opacity:1}, {display:'block'});
+					}, 7000);
+
+				})();
+
+			});
+		</script>
 	
-	document.addEventListener('DOMContentLoaded', function () {
-
-		(function (){ // IIFE
-
-			var el = document.querySelector('.one'),
-			el2 = document.querySelector('.two'),
-			el3 = document.querySelector('.three');
-
-			Velocity(el, {opacity:0}, {display:'none'});
-			Velocity(el2, {opacity:0}, {display:'none'});
-			Velocity(el3, {opacity:0}, {display:'none'});
-
-			setTimeout( function () {
-				Velocity(el, {opacity:1}, {display:'block'});
-			}, 3000);
-
-			setTimeout( function () {
-				Velocity(el2, {opacity:1}, {display:'block'});
-			}, 5000);
-
-			setTimeout( function () {
-				Velocity(el3, {opacity:1}, {display:'block'});
-			}, 7000);
-
-		})();
-
-	});
-</script>
+	</body>
 	
-</body>
 </html>
