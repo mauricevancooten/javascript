@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Animated SVG</title>
+		<link rel="stylesheet" href="styles.css">
+	</head>
+
+	<body>
+
+		<header>
+
+			<h1>Animated SVG</h1>
+
+		</header> 
+
+		<div class="wrapper">
+
+			<div class="container">
+
+				<svg id="cross" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+					 viewBox="0 0 400 400" enable-background="new 0 0 400 400" xml:space="preserve">
+				<a href="#" class='turn is-paused' id="vertical">
+					<rect x="146.3" y="66.5" width="107.5" height="267"/>
+				</a>
+				<a href="#" id="horizontal">
+					<rect x="66.5" y="146.3" width="267" height="107.5"/>
+				</a>
+				</svg>
+
+			</div> <!-- .container-->
+
+		</div> <!-- .wrapper-->
+
+		<footer>
+
+			<small>Powered by NGINX</small>
+
+		</footer> 
+
+		<script>
+
+			document.addEventListener('DOMContentLoaded', function () {
+
+				(function(){ // IIFE
+
+					var el = document.querySelector('.turn'),
+					cross = document.querySelector('#cross'),
+					visible = true;
+
+					cross.addEventListener('click', function(){
+
+						if ( visible ) {
+
+							el.classList.remove('turn-2');
+							el.classList.add('turn');
+							el.classList.remove('is-paused');
+
+						} else {
+
+							el.classList.remove('turn');
+							el.classList.add('turn-2');
+
+						}
+
+						visible = !visible;
+					  
+					});
+
+				})();
+
+			});
+			
+		</script>
+			
+	</body>
+
+</html>
