@@ -40,38 +40,8 @@
 
 		</footer>
 
-		<script src="velocity.js"></script>
-
-		<script>
-			
-			document.addEventListener('DOMContentLoaded', function () {
-
-				(function (){ // IIFE
-
-					var el = document.querySelector('.one'),
-					el2 = document.querySelector('.two'),
-					el3 = document.querySelector('.three');
-
-					Velocity(el, {opacity:0}, {display:'none'});
-					Velocity(el2, {opacity:0}, {display:'none'});
-					Velocity(el3, {opacity:0}, {display:'none'});
-
-					setTimeout( function () {
-						Velocity(el, {opacity:1}, {display:'block'});
-					}, 3000);
-
-					setTimeout( function () {
-						Velocity(el2, {opacity:1}, {display:'block'});
-					}, 5000);
-
-					setTimeout( function () {
-						Velocity(el3, {opacity:1}, {display:'block'});
-					}, 7000);
-
-				})();
-
-			});
-		</script>
+		<script src="js/velocity.js"></script>
+		<script src="js/custom.js"></script>
 	
 	</body>
 	
