@@ -12,7 +12,12 @@ function slideOut(el) {
       width += 10;
     }
     el.style.width = width + 'px';
-    requestAnimationFrame(slide);
+    // console.log(el.style.width);
+    if (width < 250) {
+      requestAnimationFrame(slide);
+    } else {
+      cancelAnimationFrame(slide);
+    }
   }
   requestAnimationFrame(slide);
 };
@@ -25,7 +30,12 @@ function slideIn(el) {
       width -= 10;
     }
     el.style.width = width + 'px';
-    requestAnimationFrame(slide);
+    // console.log(el.style.width);
+    if (width > 0) {
+      requestAnimationFrame(slide);
+    } else {
+      cancelAnimationFrame(slide);
+    }
   }
   requestAnimationFrame(slide);
 };
