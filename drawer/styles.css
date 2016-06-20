@@ -1,0 +1,88 @@
+body {
+  background: #eee;
+  font-size: 16px;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  margin: 0;
+}
+
+a {
+  color: crimson;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+}
+
+
+/* Layout
+------------------------------------------*/
+
+.sticky {
+  margin: 0 auto;
+  position: fixed;
+  height: 100vh;
+  overflow: hidden;
+  background: #333333;
+  left: 0;
+  top: 0;
+}
+
+header,
+.container,
+footer {
+  margin: 0 auto;
+  width: 88%;
+  max-width: 960px;
+}
+
+.wrapper {
+  background: #ffffff;
+  padding: 1em 0;
+}
+
+
+/* Navigation
+------------------------------------------*/
+
+nav ul {
+  padding: 0;
+  list-style: none;
+}
+
+nav ul li a {
+  padding: .5em 1em;
+  background: #cccccc;
+  width: 100%;
+  display: block;
+  transition: all 1s ease-in-out;
+}
+
+nav ul li a:hover {
+  background: pink;
+}
+
+.hamburger {
+  float: left;
+  background: url(images/hamburger.svg);
+  width: 32px;
+  height: 32px;
+}
+
+.hamburger span {
+  position: absolute;
+  left: -999em;
+}
+
+.close {
+  float: right;
+  background-color: #eeeeee;
+  background-image: url(images/clear.svg);
+  width: 32px;
+  height: 32px;
+}
+
+.close span {
+  position: absolute;
+  left: -999em;
+}
