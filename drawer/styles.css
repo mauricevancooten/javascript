@@ -20,10 +20,11 @@ a:hover {
 
 .sticky {
   margin: 0 auto;
-  width: 100%;
   position: fixed;
-  background: #eeeeee;
-  background: rgba(238, 238, 238, 0.7);
+  height: 100vh;
+  overflow: hidden;
+  background: #333333;
+  left: 0;
   top: 0;
 }
 
@@ -40,10 +41,6 @@ footer {
   padding: 1em 0;
 }
 
-section {
-  padding-top: 4em;
-}
-
 
 /* Navigation
 ------------------------------------------*/
@@ -51,19 +48,13 @@ section {
 nav ul {
   padding: 0;
   list-style: none;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-nav ul li {
-  margin-right: .5em;
 }
 
 nav ul li a {
   padding: .5em 1em;
   background: #cccccc;
-  border-radius: 15px;
+  width: 100%;
+  display: block;
   transition: all 1s ease-in-out;
 }
 
@@ -71,21 +62,27 @@ nav ul li a:hover {
   background: pink;
 }
 
-
-/* Fade in animation
-------------------------------------------*/
-
-@keyframes fadeIn {
-  to {
-    opacity: 1;
-  }
+.hamburger {
+  float: left;
+  background: url(images/hamburger.svg);
+  width: 32px;
+  height: 32px;
 }
 
-.fade-in {
-  animation: fadeIn 1s ease-in 1 forwards;
-  opacity: 0;
+.hamburger span {
+  position: absolute;
+  left: -999em;
 }
 
-.is-paused {
-  animation-play-state: paused;
+.close {
+  float: right;
+  background-color: #eeeeee;
+  background-image: url(images/clear.svg);
+  width: 32px;
+  height: 32px;
+}
+
+.close span {
+  position: absolute;
+  left: -999em;
 }
