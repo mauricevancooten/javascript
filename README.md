@@ -1,6 +1,6 @@
 # JavaScript
 
-Javascript examples
+JavaScript examples.
 
 1. Document ready
 2. Selecting
