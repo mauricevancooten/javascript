@@ -1,6 +1,6 @@
 # JavaScript
 
-Javascript examples.
+Javascript examples
 
 1. Document ready
 2. Selecting
@@ -8,7 +8,7 @@ Javascript examples.
 4. Toggle
 6. Read more or less
 5. Modal
-6. Show on scroll
+6. Scroll sticky nav
 7. Hamburger Nav
 8. Fade in
 9.	Animated SVG
