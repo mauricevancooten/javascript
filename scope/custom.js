@@ -2,7 +2,7 @@ var circle = document.querySelector('.example'),
     redButton = document.querySelector('.red-button'),
     orangeButton = document.querySelector('.orange-button');;
 
-(function() {
+(function() { // IIFE
 
     var colour = 'crimson';
 
@@ -12,7 +12,7 @@ var circle = document.querySelector('.example'),
 
 })();
 
-(function() {
+(function() { // IIFE
 
     var colour = 'orange';
 
