@@ -12,12 +12,13 @@ JavaScript examples.
 9. Gallery commission calculator
 10. Modal
 11. Scroll sticky nav
-12. Hamburger Nav
-13. Fade in
-14. Fade in fade out
-15. Slide in slide out
-16. Drawer
-17.	Animated SVG
+12. Scope
+13. Hamburger Nav
+14. Fade in
+15. Fade in fade out
+16. Slide in slide out
+17. Drawer
+18.	Animated SVG
 
 ## Licence
 
