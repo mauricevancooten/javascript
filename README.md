@@ -8,17 +8,17 @@ JavaScript examples.
 4. Toggle
 6. Read more or less
 7. Randomise
-8. Inches to centimetres
-9. Modal
-10. Scroll sticky nav
-11. Hamburger Nav
-12. Fade in
-13. Fade in fade out
-14.	Animated SVG
+8. Inches to centimetres calculator
+9. Gallery commission calculator
+10. Modal
+11. Scroll sticky nav
+12. Hamburger Nav
+13. Fade in
+14. Fade in fade out
 15. Slide in slide out
-16. Fade in fade out
-17. Drawer
+16. Drawer
+17.	Animated SVG
 
 ## Licence
 
-Licensed under MIT License
+Licensed under MIT Licence
