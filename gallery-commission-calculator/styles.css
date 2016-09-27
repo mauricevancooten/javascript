@@ -1,0 +1,80 @@
+body {
+    background: #eeeeee;
+    font-size: 16px;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    margin: 0;
+}
+
+a {
+    color: crimson;
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+}
+
+
+/* Layout
+------------------------------------------*/
+
+header,
+.container,
+footer {
+    margin: 0 auto;
+    width: 88%;
+    max-width: 1080px;
+}
+
+.wrapper {
+    padding: 1em 0;
+    background: #ffffff;
+}
+
+
+/* Table
+------------------------------------------*/
+
+td:first-child {
+    text-align: right;
+}
+
+td {
+    padding: .5em 0 .5em .7em;
+}
+
+tr:last-child td:last-child {
+    border-top: 2px solid black;
+}
+
+.calculator {
+    max-width: 376px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+input {
+    font-size: 1em;
+    background: linear-gradient(#eeeeee, #ffffff);
+    border-top: 2px solid #cccccc;
+    border-left: 2px solid #cccccc;
+    border-bottom: 2px solid #eeeeee;
+    border-bottom: 2px solid #eeeeee;
+    padding: .5em;
+}
+
+button {
+    font-size: 1em;
+    border: none;
+    background: linear-gradient(#ffffff, #eeeeee);
+    outline: 0;
+    padding: .5em 1em;
+    border-radius: 15px;
+    text-shadow: 1px 1px 3px rgba(198, 198, 198, 0.9);
+    border: 2px solid #eeeeee;
+}
+
+button:hover {
+    background: linear-gradient(#eeeeee, #ffffff);
+}
