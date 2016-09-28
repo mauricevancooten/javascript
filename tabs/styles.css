@@ -1,17 +1,17 @@
 body {
-  background: #eeeeee;
-  font-size: 16px;
-  font-family: "Trebuchet MS", Helvetica, sans-serif;
-  margin: 0;
+    background: #eeeeee;
+    font-size: 16px;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    margin: 0;
 }
 
 a {
-  color: crimson;
-  text-decoration: none;
+    color: crimson;
+    text-decoration: none;
 }
 
 a:hover {
-  color: red;
+    color: red;
 }
 
 
@@ -21,48 +21,52 @@ a:hover {
 header,
 .container,
 footer {
-  margin: 0 auto;
-  width: 88%;
-  max-width: 1080px;
+    margin: 0 auto;
+    width: 88%;
+    max-width: 1080px;
 }
 
 .wrapper {
-  padding: 1em 0;
-  background: #ffffff;
+    padding: 1em 0;
+    background: #ffffff;
 }
+
 
 /* Tabs
 ------------------------------------------*/
 
 .tabs {
-  list-style:none;
-  padding:0;
-  display:flex;
-  margin-bottom:.5em;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    margin-bottom: .5em;
 }
 
 .tabs li a {
-  background:#eeeeee;
-  padding:.5em 1em;
-  border:1px solid #cccccc;
-  border-right:none;
+    background: #eeeeee;
+    padding: .5em 1em;
+    border: 1px solid #cccccc;
+    border-right: none;
 }
 
 .tabs li:last-child a {
-  border-right:1px solid #cccccc;
-} 
+    border-right: 1px solid #cccccc;
+}
 
 .content {
-  padding:.5em;
-  border:1px solid #cccccc;
+    padding: .5em;
+    border: 1px solid #cccccc;
 }
 
 .hide-text {
-  position:absolute;
-  left: -999em;
+    clip: rect(1px, 1px, 1px, 1px);
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
 }
 
 .tabs li a.active {
-  background: #ffffff;
-  border-bottom:1px solid #ffffff;
+    background: #ffffff;
+    border-bottom: 1px solid #ffffff;
 }
