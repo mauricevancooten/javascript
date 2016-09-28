@@ -1,0 +1,78 @@
+body {
+    background: #eeeeee;
+    font-size: 16px;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    margin: 0;
+}
+
+a {
+    color: crimson;
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+}
+
+
+/* Layout
+------------------------------------------*/
+
+header,
+.container,
+footer {
+    margin: 0 auto;
+    width: 88%;
+    max-width: 1080px;
+}
+
+.wrapper {
+    padding: 1em 0;
+    background: #ffffff;
+}
+
+
+/* Accordion
+------------------------------------------*/
+
+.accordion {
+    font-size: 1em;
+    padding: .5em 1em;
+    background: #eeeeee;
+    cursor: pointer;
+    width: 100%;
+    outline: none;
+    border: none;
+    margin-bottom: .2em;
+}
+
+.accordion:hover {
+    background: pink;
+}
+
+.active:hover {
+    background: #eeeeee;
+    cursor: default;
+}
+
+.content {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: .6s ease-in-out;
+}
+
+.show {
+    opacity: 1;
+    max-height: 500px;
+}
+
+.accordion:after {
+    content: '\02795';
+    font-size: .8em;
+    float: left;
+}
+
+.accordion.active:after {
+    content: "\2796";
+}
