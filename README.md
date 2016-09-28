@@ -1,6 +1,6 @@
 # JavaScript
 
-JavaScript examples.
+JavaScript examples manipulating the DOM.
 
 1. Document ready
 2. Selecting
@@ -18,7 +18,9 @@ JavaScript examples.
 15. Fade in fade out
 16. Slide in slide out
 17. Drawer
-18.	Animated SVG
+18. Accordion
+19. Tabs
+20.	Animated SVG
 
 ## Licence
 
