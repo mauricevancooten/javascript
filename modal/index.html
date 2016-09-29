@@ -1,56 +1,36 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">	
-		<title>Modal</title>
-		<meta name="robots" content="noindex, nofollow">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="styles.css">	
-	</head>
 
-	<body>
+<head>
+    <meta charset="utf-8">
+    <title>Modal</title>
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+</head>
 
-		<header>
-
-			<h1>Modal</h1>
-
-		</header> 
-
-		<div class="wrapper">
-
-			<div class="container">
-
-				<h2>Heading</h2>
-
-				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-
-				<button class="show">Open</button>
-
-
-				<div class="overlay">
-
-					<div>
-
-						<p>some content to show and hide</p>
-
-						<button class="hide">Close</button>
-						
-					</div>
-
-				</div> <!-- .overlay-->
-
-			</div> <!-- .container-->
-
-		</div> <!-- .wrapper-->
-
-		<footer>
-
-			<small>Powered by NGINX</small>
-
-		</footer> 
-
-		<script src="custom.js"></script>
-
-	</body>
+<body>
+    <header>
+        <h1>Modal</h1>
+    </header>
+    <div class="wrapper">
+        <div class="container">
+            <h2>Heading</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            <div class="overlay">
+                <div class="overlay-content">
+                    <p>some content to show and hide</p>
+                </div>
+            </div>
+            <!-- .overlay-->
+        </div>
+        <!-- .container-->
+    </div>
+    <!-- .wrapper-->
+    <footer>
+        <small>Powered by NGINX</small>
+    </footer>
+    <script src="custom.js"></script>
+</body>
 
 </html>
