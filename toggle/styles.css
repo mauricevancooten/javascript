@@ -38,8 +38,6 @@ footer {
 nav ul {
     padding: 0;
     list-style: none;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
 }
 
@@ -51,7 +49,7 @@ nav ul li a {
     padding: .5em 1em;
     background: #cccccc;
     border-radius: 15px;
-    transition: all 1s ease-in-out;
+    transition: 1s;
 }
 
 nav ul li a:hover {
@@ -59,13 +57,15 @@ nav ul li a:hover {
 }
 
 
-/* Accessibly Hidden
+/* Show or hide
 ------------------------------------------*/
 
-.hide-text {
-    clip: rect(1px, 1px, 1px, 1px);
-    position: absolute !important;
-    height: 1px;
-    width: 1px;
+.enquiries {
+    max-height:95px;
+    transition: 1s;
     overflow: hidden;
+}
+
+.hide-text {
+    max-height:0;
 }
