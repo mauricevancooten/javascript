@@ -56,15 +56,9 @@ footer {
 }
 
 .content {
-    max-height: 0;
+    /*max-height: 0;*/
     overflow: hidden;
-    opacity: 0;
     transition: .6s ease-in-out;
-}
-
-.show {
-    opacity: 1;
-    max-height: 500px;
 }
 
 .accordion:after {
