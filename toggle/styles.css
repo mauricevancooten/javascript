@@ -62,7 +62,6 @@ nav ul li a:hover {
 
 .enquiries {
     max-height:95px;
-    transition: 1s;
     overflow: hidden;
 }
 
