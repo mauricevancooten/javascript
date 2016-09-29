@@ -33,13 +33,17 @@ footer {
 }
 
 
-/* Layout
+/* Hide text
 ------------------------------------------*/
 
-.hide-text {
-    clip: rect(1px, 1px, 1px, 1px);
-    position: absolute !important;
-    height: 1px;
-    width: 1px;
+.more {
+    transition:1s;
+    max-height:500px;
     overflow: hidden;
+}
+
+div.hide-text {
+   
+    overflow: hidden;
+    max-height:0;
 }
