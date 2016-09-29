@@ -14,7 +14,7 @@
          }
          this.classList.add('active');
          for (var i = 0; i < content.length; i++) {
-             content[i].classList.add('hide-text');
+             content[i].classList.add('hide-text');   
          }
          var tabId = this.getAttribute('href');
          // console.log(tabId);
