@@ -35,7 +35,6 @@ footer {
 
 h1 {
     max-height:37px;
-    transition: 1s;
     overflow: hidden;
 }
 
