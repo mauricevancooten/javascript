@@ -1,7 +1,10 @@
 var button = document.querySelector('.show'),
 text = document.querySelector('.enquiries');
 
-text.classList.add('hide-text');
+window.onload = function() {
+  text.classList.add('hide-text');
+};
+
 
 
 
