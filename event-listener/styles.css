@@ -30,13 +30,15 @@ footer {
 	background: #ffffff;
 }
 
-/* Accessibly hide text
+/* Hide text
 ------------------------------------------*/
 
-.hide-text {
-	  clip: rect(1px, 1px, 1px, 1px);
-    position: absolute !important;
-    height: 1px;
-    width: 1px;
+h1 {
+    max-height:37px;
+    transition: 1s;
     overflow: hidden;
+}
+
+.hide-text {
+    max-height:0;
 }
