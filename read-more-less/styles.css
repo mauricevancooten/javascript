@@ -33,17 +33,9 @@ footer {
 }
 
 
-/* Hide text
+/* Read more
 ------------------------------------------*/
 
 .more {
-    transition:1s;
-    max-height:500px;
     overflow: hidden;
-}
-
-div.hide-text {
-   
-    overflow: hidden;
-    max-height:0;
 }

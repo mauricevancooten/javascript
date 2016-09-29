@@ -1,21 +1,28 @@
-var button = document.querySelector('.show-more'),
-more = document.querySelector('.more'),
-visible = false;
+var button = document.createElement('button'),
+    more = document.querySelector('.more'),
+    height = more.clientHeight,
+    visible = false;
 
+// console.log(height);
 more.style.maxHeight = 0;
 
-button.addEventListener('click', function () {
+button.classList.add('show-more');
+button.innerHTML = 'Read more...';
+more.parentNode.insertBefore(button, more.nextSibling);
 
-	more.classList.toggle('hide-text');
+var buttonShow = document.querySelector('.show-more');
 
-	if (!visible) {
-		button.innerHTML = 'Show less...';
-		more.style.maxHeight = 500 + 'px';
-	} else {
-		button.innerHTML = 'Read more...';
-		more.style.maxHeight = 0;
-	}
+buttonShow.addEventListener('click', function() {
 
-	visible = !visible;
+    if (!visible) {
+        button.innerHTML = 'Show less...';
+        more.style.transition = 1 + 's';
+        more.style.maxHeight = height + 'px';
+    } else {
+        button.innerHTML = 'Read more...';
+        more.style.maxHeight = 0;
+    }
+
+    visible = !visible;
 
 });
