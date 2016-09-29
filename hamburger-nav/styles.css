@@ -40,6 +40,9 @@ nav ul {
     list-style: none;
     border-top: 1px solid #ffffff;
     margin-bottom: 0;
+    max-height:500px;
+    transition:max-height 1s ease-in-out;
+    overflow:hidden;
 }
 
 nav ul li a {
@@ -72,11 +75,8 @@ nav ul li a:hover {
 }
 
 .hide-text {
-    clip: rect(1px, 1px, 1px, 1px);
-    position: absolute !important;
-    height: 1px;
-    width: 1px;
     overflow: hidden;
+    max-height:0;
 }
 
 @media screen and (min-width:48em) {
@@ -84,14 +84,12 @@ nav ul li a:hover {
         display: none;
     }
     .hide-text {
-        clip: unset;
-        position: static !important;
-        height: auto;
-        width: 88%;
+        max-height:500px;
         overflow: inherit;
     }
     nav ul {
         display: flex;
+        width:88%;
         max-width: 1080px;
         margin: 0 auto;
         border-top: 0;
