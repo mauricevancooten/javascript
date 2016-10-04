@@ -43,6 +43,7 @@ footer {
     height: 100%;
     z-index: 1000;
     background: rgba(0, 0, 0, .5);
+    transition:opacity 1s;
 }
 
 .js .hide-text {
@@ -51,6 +52,7 @@ footer {
     height: 1px;
     width: 1px;
     overflow: hidden;
+    opacity:0;
 }
 
 .js .overlay div {
