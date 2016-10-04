@@ -1,5 +1,4 @@
 var accordion = document.querySelectorAll('.accordion'),
-    content = document.querySelector('.content'),
     allContent = document.querySelectorAll('.content');
 
 for (var i = 0; i < allContent.length; i++) {
