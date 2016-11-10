@@ -1,9 +1,12 @@
-var button = document.querySelector('.show'),
-text = document.querySelector('.enquiries');
+var button, text
 
-text.classList.add('hide-text');
+link = document.querySelector('.show')
+text = document.querySelector('.enquiries')
 
-button.addEventListener('click', function(){
-	text.style.transition = '1s';					
-	text.classList.toggle('hide-text');
-});
+text.classList.add('hide-text')
+
+link.addEventListener('click', function(e){
+	e.preventDefault() // Prevent default behaviour
+	text.style.transition = '1s'					
+	text.classList.toggle('hide-text')
+})
