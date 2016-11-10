@@ -46,6 +46,13 @@ footer {
   transition: opacity 1s;
 }
 
+.js .overlay div {
+  width: 90%;
+  margin: 2em auto;
+  background: #ffffff;
+  padding: 1em;
+}
+
 .js .hide-text {
   clip: rect(1px, 1px, 1px, 1px);
   position: absolute !important;
@@ -55,9 +62,4 @@ footer {
   opacity: 0;
 }
 
-.js .overlay div {
-  width: 90%;
-  margin: 2em auto;
-  background: #ffffff;
-  padding: 1em;
-}
+
