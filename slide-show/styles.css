@@ -1,0 +1,72 @@
+body {
+  background: #eee;
+  font-size: 16px;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  margin:0;
+}
+
+a {
+  color:crimson;
+  text-decoration:none;
+}
+
+a:hover {
+  color:red;
+}
+
+/* Layout
+------------------------------------------*/
+
+header,
+.container,
+footer {
+  margin: 0 auto;
+  width:88%;
+  max-width: 960px;
+}
+
+.wrapper {
+  padding:1em 0;
+  background: #fff;
+}
+
+/* Slide show
+------------------------------------------*/
+
+.slide-show {
+  display:flex;
+  max-width:100%;
+  overflow:hidden;
+}
+
+/* Responsive
+------------------------------------------*/
+.slide-show {
+  position: relative;
+}
+.nxt, .prev {
+  z-index:100;
+  position:absolute;
+  bottom:20px;
+}
+
+.prev {
+  left:20px;
+}
+
+.nxt {
+  right:20px;
+}
+.slide-show img {
+  max-width:100%;
+  height:auto;
+}
+
+.slide-show div {
+  width:100%;
+  position:absolute;
+}
+
+.slide-show {
+  height:100%;
+}
