@@ -1,48 +1,50 @@
-var box = document.querySelector('.example'),
-    open = document.querySelector('.show'),
-    close = document.querySelector('.hide');
+var box, open, close, width
 
-  function slideOut(el) {
-    var width = 0;
+box = document.querySelector('.example')
+open = document.querySelector('.show')
+close = document.querySelector('.hide')
 
-    function slide() {
-      if (width < 250) {
-        width += 10;
-      }
-      el.style.width = width + 'px';
-      // console.log(el.style.width);
-      if (width < 250) {
-        requestAnimationFrame(slide);
-      } else {
-        cancelAnimationFrame(slide);
-      }
+function slideOut(el) {
+  width = 0;
 
+  function slide() {
+    if (width < 250) {
+      width += 10
     }
-    requestAnimationFrame(slide);
-  };
-
-  function slideIn(el) {
-    var width = 250;
-
-    function slide() {
-      if (width > 0) {
-        width -= 10;
-      }
-      el.style.width = width + 'px';
-      // console.log(el.style.width);
-      if (width > 0) {
-        requestAnimationFrame(slide);
-      } else {
-        cancelAnimationFrame(slide);
-      }
+    el.style.width = width + 'px'
+      // console.log(el.style.width)
+    if (width < 250) {
+      requestAnimationFrame(slide)
+    } else {
+      cancelAnimationFrame(slide)
     }
-    requestAnimationFrame(slide);
-  };
 
-  open.addEventListener('click', function() {
-    slideOut(box);
-  });
+  }
+  requestAnimationFrame(slide)
+};
 
-  close.addEventListener('click', function() {
-    slideIn(box);
-  });
+function slideIn(el) {
+  width = 250;
+
+  function slide() {
+    if (width > 0) {
+      width -= 10
+    }
+    el.style.width = width + 'px'
+      // console.log(el.style.width)
+    if (width > 0) {
+      requestAnimationFrame(slide)
+    } else {
+      cancelAnimationFrame(slide)
+    }
+  }
+  requestAnimationFrame(slide)
+}
+
+open.addEventListener('click', function() {
+  slideOut(box)
+})
+
+close.addEventListener('click', function() {
+  slideIn(box);
+})
