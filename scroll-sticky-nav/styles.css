@@ -1,21 +1,21 @@
 body {
-    background: #eee;
-    font-size: 16px;
-    font-family: "Trebuchet MS", Helvetica, sans-serif;
-    margin: 0;
+  background: #eee;
+  font-size: 16px;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  margin: 0;
 }
 
 a {
-    color: crimson;
-    text-decoration: none;
+  color: crimson;
+  text-decoration: none;
 }
 
 a:hover {
-    color: red;
+  color: red;
 }
 
 h1 {
-    margin: 2em 0 1em;
+  margin: 2em 0 1em;
 }
 
 
@@ -23,28 +23,28 @@ h1 {
 ------------------------------------------*/
 
 .sticky {
-    width: 100%;
-    position: fixed;
-    background: rgba(238, 238, 238, 0.7);
-    top: 0;
+  width: 100%;
+  position: fixed;
+  background: rgba(238, 238, 238, 0.7);
+  top: 0;
 }
 
 nav,
 header,
 .container,
 footer {
-    margin: 0 auto;
-    width: 88%;
-    max-width: 960px;
+  margin: 0 auto;
+  width: 88%;
+  max-width: 960px;
 }
 
 .wrapper {
-    background: #ffffff;
-    padding: 1em 0;
+  background: #ffffff;
+  padding: 1em 0;
 }
 
 section {
-    padding-top: 4em;
+  padding-top: 4em;
 }
 
 
@@ -52,22 +52,22 @@ section {
 ------------------------------------------*/
 
 nav ul {
-    padding: 0;
-    list-style: none;
-    display: flex;
+  padding: 0;
+  list-style: none;
+  display: flex;
 }
 
 nav ul li {
-    margin-right: .5em;
+  margin-right: .5em;
 }
 
 nav ul li a {
-    padding: .5em 1em;
-    background: #cccccc;
-    border-radius: 15px;
-    transition: all 1s ease-in-out;
+  padding: .5em 1em;
+  background: #cccccc;
+  border-radius: 15px;
+  transition: 1s;
 }
 
 nav ul li a:hover {
-    background: pink;
+  background: pink;
 }
