@@ -35,21 +35,21 @@ footer {
 /* Tabs
 ------------------------------------------*/
 
-.tabs {
+#tabs {
     list-style: none;
     padding: 0;
     display: flex;
     margin-bottom: .5em;
 }
 
-.tabs li a {
+#tabs li a {
     background: #eeeeee;
     padding: .5em 1em;
     border: 1px solid #cccccc;
     border-right: none;
 }
 
-.tabs li:last-child a {
+#tabs li:last-child a {
     border-right: 1px solid #cccccc;
 }
 
@@ -66,7 +66,7 @@ footer {
     overflow: hidden;
 }
 
-.tabs li a.active {
+#tabs li a.active {
     background: #ffffff;
     border-bottom: 1px solid #ffffff;
 }
