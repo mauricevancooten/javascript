@@ -1,23 +1,25 @@
-var circle = document.querySelector('.example'),
-    redButton = document.querySelector('.red-button'),
-    orangeButton = document.querySelector('.orange-button');;
+var circle, redButton, orangeButton
 
-(function() { // IIFE
+circle = document.querySelector('.example')
+redButton = document.querySelector('.red-button')
+orangeButton = document.querySelector('.orange-button')
 
-    var colour = 'crimson';
+;(function() { // IIFE
 
-    redButton.addEventListener('click', function() {
-        circle.style.backgroundColor = colour;
-    });
+  var colour = 'crimson'
 
-})();
+  redButton.addEventListener('click', function() {
+    circle.style.backgroundColor = colour
+  })
 
-(function() { // IIFE
+})()
 
-    var colour = 'orange';
+;(function() { // IIFE
 
-    orangeButton.addEventListener('click', function() {
-        circle.style.backgroundColor = colour;
-    });
+  var colour = 'orange'
 
-})();
+  orangeButton.addEventListener('click', function() {
+    circle.style.backgroundColor = colour
+  })
+
+})()
