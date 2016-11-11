@@ -28,7 +28,7 @@ div.forEach(function(el, i) {
 // Prev, next buttons
 
 prev = document.createElement('a'),
-next = document.createElement('a')
+  next = document.createElement('a')
 prev.innerHTML = '< prev'
 next.innerHTML = 'next >'
 prev.classList.add('prev')
@@ -65,7 +65,7 @@ prev.addEventListener('click', function(e) {
 // Check for prev or next image
 
 function activeLinks() {
-	// Disable prev button if on first slide
+  // Disable prev button if on first slide
   if (count == 0) {
     prev.style.opacity = .5
     prev.removeAttribute('href', '#')
@@ -87,18 +87,18 @@ function activeLinks() {
 
 window.addEventListener('resize', function(e) {
   e.preventDefault
-  // Recalculate width
+    // Recalculate width
   width = slideShow.clientWidth
-  // Resize each div
+    // Resize each div
   div.forEach(function(el, i) {
     el.style.minWidth = width + 'px'
     el.style.transition = '1s'
-    // Wait for width before resetting height
+      // Wait for width before resetting height
     setTimeout(function() {
-      height = div[0].clientHeight
-      slideShow.style.height = height + 'px'
-    }, 1000)
-    // Wait for height before resetting width
+        height = div[0].clientHeight
+        slideShow.style.height = height + 'px'
+      }, 1000)
+      // Wait for height before resetting width
     setTimeout(function() {
       width = slideShow.clientWidth
       div[1].style.left = width + 'px'
