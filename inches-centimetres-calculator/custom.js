@@ -1,11 +1,11 @@
-var inputInches, button, total, result
+var inputInches, button, total
 
 inputInches = document.querySelector('.inches')
 button = document.querySelector('button')
 total = document.querySelector('.total')
 
 function convertToCentimetres(inches) {
-  result = inches / .39370079
+  var result = inches / .39370079
   return result
 }
 

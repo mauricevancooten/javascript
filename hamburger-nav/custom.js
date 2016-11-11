@@ -1,19 +1,19 @@
-var nav = document.querySelector('.nav-collapse'),
-  navList = nav.firstElementChild,
-  link = document.createElement('a');
+var nav, navList, link
 
-nav.appendChild(link);
-link.setAttribute('href', '#');
-link.classList.add('hamburger');
-link.innerHTML = '<span>Menu</span>';
+nav = document.querySelector('.burger-nav')
+navList = nav.firstElementChild
+link = document.createElement('a')
 
-var hamburger = document.querySelector('.hamburger');
+nav.appendChild(link)
+link.setAttribute('href', '#')
+link.classList.add('burger')
+link.innerHTML = '<span>Menu</span>'
 
-navList.classList.add('hide-text');
+link = document.querySelector('.burger')
 
-hamburger.addEventListener('click', function(e) {
+navList.classList.add('hide-text')
 
-  e.preventDefault();
-  navList.classList.toggle('hide-text');
-
+link.addEventListener('click', function(e) {
+  e.preventDefault()
+  navList.classList.toggle('hide-text')
 });
