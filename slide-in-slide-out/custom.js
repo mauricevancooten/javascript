@@ -3,7 +3,7 @@ var box, open, close, width
 box = document.querySelector('.example')
 open = document.querySelector('.show')
 close = document.querySelector('.hide')
-
+// Slide out function
 function slideOut(el) {
   width = 0;
 
@@ -22,7 +22,7 @@ function slideOut(el) {
   }
   requestAnimationFrame(slide)
 };
-
+// Slide in function
 function slideIn(el) {
   width = 250;
 

@@ -5,7 +5,7 @@ open = document.querySelector('.show')
 close = document.querySelector('.hide')
 
 box.style.opacity = 0
-
+  // Fade in function
 function fadeIn(el) {
   opacity = 0
 
@@ -25,7 +25,7 @@ function fadeIn(el) {
   }
   requestAnimationFrame(fade)
 }
-
+// Fade out function
 function fadeOut(el) {
   opacity = 1
 
