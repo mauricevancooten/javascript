@@ -41,7 +41,7 @@ nav ul {
     border-top: 1px solid #ffffff;
     margin-bottom: 0;
     max-height:500px;
-    transition:max-height 1s ease-in-out;
+    transition:max-height 1s;
     overflow:hidden;
 }
 
@@ -58,15 +58,15 @@ nav ul li a:hover {
     background: pink;
 }
 
-.hamburger {
+.burger {
     float: right;
-    background: url(images/hamburger.svg);
+    background: url(img/burger.svg);
     width: 32px;
     height: 32px;
     margin-right: 6%;
 }
 
-.hamburger span {
+.burger span {
     clip: rect(1px, 1px, 1px, 1px);
     position: absolute !important;
     height: 1px;
@@ -80,7 +80,7 @@ nav ul li a:hover {
 }
 
 @media screen and (min-width:48em) {
-    .hamburger {
+    .burger {
         display: none;
     }
     .hide-text {

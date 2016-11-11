@@ -1,54 +1,55 @@
-var box = document.querySelector('.example'),
-  open = document.querySelector('.show'),
-  close = document.querySelector('.hide');
+var box, open, close, opacity
 
-box.style.opacity = 0;
+box = document.querySelector('.example')
+open = document.querySelector('.show')
+close = document.querySelector('.hide')
 
+box.style.opacity = 0
+  // Fade in function
 function fadeIn(el) {
-  var opacity = 0;
+  opacity = 0
 
   function fade() {
-
     if (opacity < .9) {
-      opacity += .1;
+      opacity += .1
     }
 
-    el.style.opacity = opacity;
-    console.log(el.style.opacity);
+    el.style.opacity = opacity
+    console.log(el.style.opacity)
     if (opacity < .9) {
-      requestAnimationFrame(fade);
+      requestAnimationFrame(fade)
     } else {
-      cancelAnimationFrame(fade);
+      cancelAnimationFrame(fade)
     }
 
   }
-  requestAnimationFrame(fade);
-};
-
+  requestAnimationFrame(fade)
+}
+// Fade out function
 function fadeOut(el) {
-  var opacity = 1;
+  opacity = 1
 
   function fade() {
     if (opacity > .1) {
-      opacity -= .1;
+      opacity -= .1
     }
 
-    el.style.opacity = opacity;
-    console.log(el.style.opacity);
+    el.style.opacity = opacity
+    console.log(el.style.opacity)
     if (opacity > .1) {
-      requestAnimationFrame(fade);
+      requestAnimationFrame(fade)
     } else {
-      cancelAnimationFrame(fade);
+      cancelAnimationFrame(fade)
     }
 
   }
-  requestAnimationFrame(fade);
-};
+  requestAnimationFrame(fade)
+}
 
 open.addEventListener('click', function() {
-  fadeIn(box);
-});
+  fadeIn(box)
+})
 
 close.addEventListener('click', function() {
-  fadeOut(box);
-});
+  fadeOut(box)
+})

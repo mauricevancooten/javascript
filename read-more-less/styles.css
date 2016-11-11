@@ -1,17 +1,17 @@
 body {
-    background: #eeeeee;
-    font-size: 16px;
-    font-family: "Trebuchet MS", Helvetica, sans-serif;
-    margin: 0;
+  background: #eeeeee;
+  font-size: 16px;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  margin: 0;
 }
 
 a {
-    color: crimson;
-    text-decoration: none;
+  color: crimson;
+  text-decoration: none;
 }
 
 a:hover {
-    color: red;
+  color: red;
 }
 
 
@@ -21,21 +21,13 @@ a:hover {
 header,
 .container,
 footer {
-    margin: 0 auto;
-    width: 88%;
-    max-width: 960px;
+  margin: 0 auto;
+  width: 88%;
+  max-width: 960px;
 }
 
 .wrapper {
-    width: 100%;
-    background: #ffffff;
-    padding: 1em 0;
-}
-
-
-/* Read more
-------------------------------------------*/
-
-.more {
-    overflow: hidden;
+  width: 100%;
+  background: #ffffff;
+  padding: 1em 0;
 }

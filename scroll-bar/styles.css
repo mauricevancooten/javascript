@@ -14,28 +14,23 @@ a:hover {
   color: red;
 }
 
-h1 {
-  margin: 2em 0 1em;
-}
-
 
 /* Layout
 ------------------------------------------*/
 
 .sticky {
-  width: 100%;
   position: fixed;
-  background: rgba(238, 238, 238, 0.7);
   top: 0;
+  background: rgba(238, 238, 238, 0.7);
+  width: 100%;
 }
 
-nav,
 header,
 .container,
 footer {
   margin: 0 auto;
   width: 88%;
-  max-width: 960px;
+  max-width: 1080px;
 }
 
 .wrapper {
@@ -44,7 +39,7 @@ footer {
 }
 
 section {
-  padding-top: 4em;
+  padding-top: 3em;
 }
 
 
@@ -70,4 +65,13 @@ nav ul li a {
 
 nav ul li a:hover {
   background: pink;
+}
+
+
+/* Scroll bar
+------------------------------------------*/
+
+.scroll-bar {
+  height: 4px;
+  background: lime;
 }

@@ -1,11 +1,12 @@
-var el = document.querySelector('h1'),
-button = document.querySelector('.show');
+var el, button
 
-el.classList.add('hide-text');
-el.style.transition = '1s';
+el = document.querySelector('h1')
+button = document.querySelector('.show')
 
-button.addEventListener('click', function(){
+el.classList.add('hide-text')
+el.style.transition = '1s'
 
-	el.classList.remove('hide-text');
-
-});  	
+// Listens for click event before triggering script
+button.addEventListener('click', function() {
+  el.classList.remove('hide-text')
+})
