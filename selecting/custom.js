@@ -16,21 +16,18 @@ document.querySelector('.quux').style.cssText = 'background: pink; color: red;';
 
 // Apply a class
 
-document.querySelector('.baz').classList.add("foo");	
+document.querySelector('.baz').classList.add("foo");
 
 // Selecting a specific element within multiple elements
 
-var p  = document.querySelectorAll('p');
-
-// console.log(p.length);
+var p = document.querySelectorAll('p');
 
 p[4].style.color = 'red';
 
 // Selecting multiple elements
 
-var h2  = document.querySelectorAll('h2');
+var h2 = document.querySelectorAll('h2');
 
-for (var i = 0; i < h2.length; i++) {
-	h2[i].style.color = '#cccccc';
-}
-
+h2.forEach(function(item) {
+    item.style.color = '#cccccc';
+})
