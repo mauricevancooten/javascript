@@ -6,7 +6,7 @@ nav = document.querySelector('nav')
 nav.style.width = 0
 
 menu.addEventListener('click', function() {
-  nav.style.width = 250 + 'px'
+  nav.style.width = '250px'
 })
 
 close.addEventListener('click', function() {
