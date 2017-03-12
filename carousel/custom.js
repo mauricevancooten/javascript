@@ -1,3 +1,4 @@
+window.onload = function() {
 var slideshow, div, prev, next, width, height, count
 
 slideShow = document.querySelector('.slide-show')
@@ -108,3 +109,5 @@ window.addEventListener('resize', function(e) {
     }, 1500)
   })
 })
+
+}
