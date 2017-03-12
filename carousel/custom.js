@@ -1,5 +1,7 @@
+'use strict'
+
 window.onload = function() {
-var slideshow, div, prev, next, width, height, count
+var slideShow, div, prev, next, width, height, count
 
 slideShow = document.querySelector('.slide-show')
 div = slideShow.querySelectorAll('div')
@@ -8,10 +10,9 @@ div = slideShow.querySelectorAll('div')
 
 width = slideShow.clientWidth
 
-div.forEach(function(el, i) {
-  el.style.minWidth = width + 'px'
-  el.style.transition = '1s'
-})
+for (var i; i < div.length; i++) {
+  div[i].cssText = 'transition: 1s; min-width:' + width + 'px;'
+}
 
 // Set the height of the slideshow to the height of the first div
 
@@ -22,9 +23,9 @@ slideShow.style.height = height + 'px'
 
 count = 0;
 
-div.forEach(function(el, i) {
-  el.style.left = (i * width) - ((count) * width) + 'px'
-})
+for (var i = 0; i < div.length; i++) {
+  div[i].style.left = (i * width) - ((count) * width) + 'px'
+}
 
 // Prev, next buttons
 
@@ -56,9 +57,9 @@ prev.addEventListener('click', function(e) {
   e.preventDefault
   if (count > 0) {
     count -= 1;
-    div.forEach(function(el, i) {
-      el.style.left = (i * width) - ((count) * width) + 'px'
-    })
+    for (var i = 0; i < div.length; i++) {
+      div[i].style.left = (i * width) - ((count) * width) + 'px'
+    }
   }
   activeLinks()
 })
@@ -91,9 +92,8 @@ window.addEventListener('resize', function(e) {
     // Recalculate width
   width = slideShow.clientWidth
     // Resize each div
-  div.forEach(function(el, i) {
-    el.style.minWidth = width + 'px'
-    el.style.transition = '1s'
+  for (var i = 0; i < div.length; i++) {
+    div[i].cssText = 'transition: 1s; min-width:' + width + 'px;'
       // Wait for width before resetting height
     setTimeout(function() {
         height = div[0].clientHeight
@@ -103,11 +103,11 @@ window.addEventListener('resize', function(e) {
     setTimeout(function() {
       width = slideShow.clientWidth
       div[1].style.left = width + 'px'
-      div.forEach(function(el, i) {
-        el.style.left = (i * width) - ((count) * width) + 'px'
-      })
+       for (var i = 0; i < div.length; i++) {
+        div[i].style.left = (i * width) - ((count) * width) + 'px'
+      }
     }, 1500)
-  })
+  }
 })
 
 }
