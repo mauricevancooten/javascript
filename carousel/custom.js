@@ -46,9 +46,9 @@ next.addEventListener('click', function(e) {
   e.preventDefault
   if (count < (div.length - 1)) {
     count += 1;
-    div.forEach(function(el, i) {
-      el.style.left = (i * width) - ((count) * width) + 'px'
-    })
+    for (var i = 0; i < div.length; i++) {
+      div[i].style.left = (i * width) - ((count) * width) + 'px'
+    }
   }
   activeLinks()
 })
