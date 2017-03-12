@@ -18,9 +18,10 @@ JavaScript examples manipulating the DOM.
 14. Fade in fade out
 15. Slide in slide out
 16. Drawer
-17. Accordion
-18. Tabs
-19.	Animated SVG
+17. Push Drawer
+18. Accordion
+19. Tabs
+20.	Animated SVG
 
 ## Licence
 
