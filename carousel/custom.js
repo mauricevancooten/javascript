@@ -1,6 +1,7 @@
 'use strict'
 
 window.onload = function() {
+  
 var slideShow, div, prev, next, width, height, count
 
 slideShow = document.querySelector('.slide-show')
@@ -11,7 +12,7 @@ div = slideShow.querySelectorAll('div')
 width = slideShow.clientWidth
 
 for (var i; i < div.length; i++) {
-  div[i].cssText = 'transition: 1s; min-width:' + width + 'px;'
+  div[i].style.cssText = 'min-width:' + width + 'px;'
 }
 
 // Set the height of the slideshow to the height of the first div
@@ -47,7 +48,7 @@ next.addEventListener('click', function(e) {
   if (count < (div.length - 1)) {
     count += 1;
     for (var i = 0; i < div.length; i++) {
-      div[i].style.left = (i * width) - ((count) * width) + 'px'
+      div[i].style.cssText = 'left:' + ((i * width) - ((count) * width)) + 'px; transition: 1s;'
     }
   }
   activeLinks()
@@ -58,7 +59,8 @@ prev.addEventListener('click', function(e) {
   if (count > 0) {
     count -= 1;
     for (var i = 0; i < div.length; i++) {
-      div[i].style.left = (i * width) - ((count) * width) + 'px'
+      // div[i].style.left = (i * width) - ((count) * width) + 'px'
+      div[i].style.cssText = 'left:' + ((i * width) - ((count) * width)) + 'px; transition:1s;'
     }
   }
   activeLinks()
