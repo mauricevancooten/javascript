@@ -6,7 +6,8 @@ document.querySelector('#foo').style.backgroundColor = 'pink'
   // Get element by class name
 document.querySelector('.bar').style.backgroundColor = 'pink'
   // Apply multiple CSS statements at once
-document.querySelector('.quux').style.cssText = 'background: pink; color: red;'
+document.querySelector('.quux
+').style.cssText = 'background: pink; color: red;'
   // Apply a class
 document.querySelector('.baz').classList.add("foo")
   // Selecting a specific element within multiple elements
