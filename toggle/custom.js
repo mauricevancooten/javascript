@@ -1,4 +1,4 @@
-var button, text
+var link, text
 
 link = document.querySelector('.show')
 text = document.querySelector('.enquiries')
