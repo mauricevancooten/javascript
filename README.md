@@ -12,16 +12,18 @@ JavaScript examples manipulating the DOM.
 8. Gallery commission calculator
 9. Modal
 10. Scroll sticky nav
-11. Scope
-12. Hamburger Nav
-13. Fade in
-14. Fade in fade out
-15. Slide in slide out
-16. Drawer
-17. Push Drawer
-18. Accordion
-19. Tabs
-20.	Animated SVG
+11. Scroll progress bar
+12. Scope
+13. Hamburger Nav
+14. Fade in
+15. Fade in fade out
+16. Slide in slide out
+17. Drawer
+18. Push Drawer
+19. Accordion
+20. Tabs
+21. Carousel
+22.	Animated SVG
 
 ## Licence
 
