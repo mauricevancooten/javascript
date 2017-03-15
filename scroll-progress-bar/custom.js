@@ -1,3 +1,5 @@
+'use strict'
+
 var scrollBar, body, height, percentage
 
 scrollBar = document.querySelector('.scroll-bar')
