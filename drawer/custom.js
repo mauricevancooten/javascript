@@ -1,4 +1,7 @@
+'use strict'
+
 var menu, close, nav
+
 menu = document.querySelector('.hamburger')
 close = document.querySelector('.close')
 nav = document.querySelector('nav')
