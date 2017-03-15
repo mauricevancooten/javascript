@@ -35,25 +35,25 @@ footer {
 /* Tabs
 ------------------------------------------*/
 
-#tabs {
+#tabs > ul {
     list-style: none;
     padding: 0;
     display: flex;
     margin-bottom: .5em;
 }
 
-#tabs li a {
+#tabs > ul li a {
     background: #eeeeee;
     padding: .5em 1em;
     border: 1px solid #cccccc;
     border-right: none;
 }
 
-#tabs li:last-child a {
+#tabs > ul li:last-child a {
     border-right: 1px solid #cccccc;
 }
 
-.content {
+#tabs > div {
     padding: .5em;
     border: 1px solid #cccccc;
 }

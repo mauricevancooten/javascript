@@ -1,29 +1,30 @@
 'use strict'
 
-var content, tabLink, tabId
+var tabContent, tabButton, tabId
 
-content = document.querySelectorAll('.content')
-tabLink = document.querySelectorAll('.tab')
-  // Hide all content except the first
-for (var i = 0; i < content.length; i++) {
+tabContent = document.querySelector('#tabs').querySelectorAll('div')
+tabButton = document.querySelector('#tabs').childNodes[1].querySelectorAll('a')
+console.log(tabButton)
+  // Hide all tabContent except the first
+for (var i = 0; i < tabContent.length; i++) {
   if (i > 0) {
-    content[i].classList.add('hide-text')
+    tabContent[i].classList.add('hide-text')
   }
 }
-// Loop through tabLink array
-for (var i = 0; i < tabLink.length; i++) {
+// Loop through tabButton array
+for (var i = 0; i < tabButton.length; i++) {
   // Set first tab to active state
-  tabLink[0].classList.add('active')
+  tabButton[0].classList.add('active')
 
-  tabLink[i].addEventListener('click', function(e) {
+  tabButton[i].addEventListener('click', function(e) {
     e.preventDefault()
-    for (var i = 0; i < tabLink.length; i++) {
-      tabLink[i].classList.remove('active')
+    for (var i = 0; i < tabButton.length; i++) {
+      tabButton[i].classList.remove('active')
     }
     // Add active state for tab clicked on
     this.classList.add('active')
-    for (var i = 0; i < content.length; i++) {
-      content[i].classList.add('hide-text')
+    for (var i = 0; i < tabContent.length; i++) {
+      tabContent[i].classList.add('hide-text')
     }
     // Get the href value of the clicked item
     tabId = this.getAttribute('href')
