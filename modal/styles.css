@@ -46,7 +46,7 @@ footer {
   transition: opacity 1s;
 }
 
-.js .overlay div {
+.js .overlay-content {
   width: 90%;
   margin: 2em auto;
   background: #ffffff;

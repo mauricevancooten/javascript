@@ -1,3 +1,5 @@
+'use strict'
+
 var open, close, modal, modalContent, html
 
 modal = document.querySelector('.overlay')
@@ -15,7 +17,7 @@ close.innerHTML = 'Close'
 
 // Insert close buton inside .overlay-content element
 modalContent.appendChild(close)
-// Insert open button after .overlay element
+// Insert open button before .overlay element
 modal.parentNode.insertBefore(open, modal) 
 // Add js class to html element for accessibility (see CSS)
 html.classList.add('js')
