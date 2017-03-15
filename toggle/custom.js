@@ -1,12 +1,14 @@
-var link, text
+'use strict'
 
-link = document.querySelector('.show')
-text = document.querySelector('.enquiries')
+var button, content
 
-text.classList.add('hide-text')
+button = document.querySelector('.show')
+content = document.querySelector('.enquiries')
 
-link.addEventListener('click', function(e){
+content.classList.add('hide-text')
+
+button.addEventListener('click', function(e){
 	e.preventDefault() // Prevent default behaviour
-	text.style.transition = '1s'					
-	text.classList.toggle('hide-text')
+	content.style.transition = '1s'					
+	content.classList.toggle('hide-text')
 })
