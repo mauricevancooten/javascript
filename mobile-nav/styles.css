@@ -35,17 +35,22 @@ footer {
 /* Navigation
 ------------------------------------------*/
 
-nav ul {
-    padding: 0;
-    list-style: none;
-    border-top: 1px solid #ffffff;
+nav {
+    
     margin-bottom: 0;
     max-height:500px;
     transition:max-height 1s;
     overflow:hidden;
 }
 
-nav ul li a {
+nav ul {
+    border-top: 1px solid #ffffff;
+    list-style:none;
+    padding:0;
+    margin-bottom:0;
+}
+
+nav a {
     background: #cccccc;
     padding: .5em 1em;
     display: block;
@@ -54,11 +59,11 @@ nav ul li a {
     border-bottom: 1px solid #ffffff;
 }
 
-nav ul li a:hover {
+nav a:hover {
     background: pink;
 }
 
-.burger {
+.menu {
     float: right;
     background: url(img/burger.svg);
     width: 32px;
@@ -66,7 +71,7 @@ nav ul li a:hover {
     margin-right: 6%;
 }
 
-.burger span {
+.menu span {
     clip: rect(1px, 1px, 1px, 1px);
     position: absolute !important;
     height: 1px;
@@ -80,7 +85,7 @@ nav ul li a:hover {
 }
 
 @media screen and (min-width:48em) {
-    .burger {
+    .menu {
         display: none;
     }
     .hide-text {
@@ -94,10 +99,10 @@ nav ul li a:hover {
         margin: 0 auto;
         border-top: 0;
     }
-    nav ul li {
+    nav a {
         margin-right: .5em;
     }
-    nav ul li a {
+    nav a {
         border-bottom: 0;
     }
 }
