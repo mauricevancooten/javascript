@@ -1,3 +1,5 @@
+'use strict'
+
 var header, wrapper, footer
 
 header = document.querySelector('header')
