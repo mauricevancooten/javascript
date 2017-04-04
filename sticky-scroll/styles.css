@@ -52,22 +52,19 @@ section {
 ------------------------------------------*/
 
 nav ul {
-  padding: 0;
-  list-style: none;
+  list-style:none;
+  padding:0;
   display: flex;
 }
 
-nav ul li {
+nav a {
   margin-right: .5em;
-}
-
-nav ul li a {
   padding: .5em 1em;
   background: #cccccc;
   border-radius: 15px;
   transition: 1s;
 }
 
-nav ul li a:hover {
+nav a:hover {
   background: pink;
 }
