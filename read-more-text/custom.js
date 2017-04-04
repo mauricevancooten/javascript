@@ -1,3 +1,5 @@
+'use strict'
+
 var button, more, height, visible
 
 more = document.querySelector('.more')
