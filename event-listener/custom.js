@@ -1,5 +1,3 @@
-'use strict'
-
 var el, button
 
 el = document.querySelector('h1')

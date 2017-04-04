@@ -1,8 +1,4 @@
-'use strict'
-
-window.onload = function() {
-  
-var slideShow, div, prev, next, width, height, count
+var slideshow, div, prev, next, width, height, count
 
 slideShow = document.querySelector('.slide-show')
 div = slideShow.querySelectorAll('div')
@@ -11,9 +7,10 @@ div = slideShow.querySelectorAll('div')
 
 width = slideShow.clientWidth
 
-for (var i; i < div.length; i++) {
-  div[i].style.cssText = 'min-width:' + width + 'px;'
-}
+div.forEach(function(el, i) {
+  el.style.minWidth = width + 'px'
+  el.style.transition = '1s'
+})
 
 // Set the height of the slideshow to the height of the first div
 
@@ -24,9 +21,9 @@ slideShow.style.height = height + 'px'
 
 count = 0;
 
-for (var i = 0; i < div.length; i++) {
-  div[i].style.left = (i * width) - ((count) * width) + 'px'
-}
+div.forEach(function(el, i) {
+  el.style.left = (i * width) - ((count) * width) + 'px'
+})
 
 // Prev, next buttons
 
@@ -47,9 +44,9 @@ next.addEventListener('click', function(e) {
   e.preventDefault
   if (count < (div.length - 1)) {
     count += 1;
-    for (var i = 0; i < div.length; i++) {
-      div[i].style.cssText = 'left:' + ((i * width) - ((count) * width)) + 'px; transition: 1s;'
-    }
+    div.forEach(function(el, i) {
+      el.style.left = (i * width) - ((count) * width) + 'px'
+    })
   }
   activeLinks()
 })
@@ -58,10 +55,9 @@ prev.addEventListener('click', function(e) {
   e.preventDefault
   if (count > 0) {
     count -= 1;
-    for (var i = 0; i < div.length; i++) {
-      // div[i].style.left = (i * width) - ((count) * width) + 'px'
-      div[i].style.cssText = 'left:' + ((i * width) - ((count) * width)) + 'px; transition:1s;'
-    }
+    div.forEach(function(el, i) {
+      el.style.left = (i * width) - ((count) * width) + 'px'
+    })
   }
   activeLinks()
 })
@@ -94,8 +90,9 @@ window.addEventListener('resize', function(e) {
     // Recalculate width
   width = slideShow.clientWidth
     // Resize each div
-  for (var i = 0; i < div.length; i++) {
-    div[i].cssText = 'transition: 1s; min-width:' + width + 'px;'
+  div.forEach(function(el, i) {
+    el.style.minWidth = width + 'px'
+    el.style.transition = '1s'
       // Wait for width before resetting height
     setTimeout(function() {
         height = div[0].clientHeight
@@ -105,11 +102,9 @@ window.addEventListener('resize', function(e) {
     setTimeout(function() {
       width = slideShow.clientWidth
       div[1].style.left = width + 'px'
-       for (var i = 0; i < div.length; i++) {
-        div[i].style.left = (i * width) - ((count) * width) + 'px'
-      }
+      div.forEach(function(el, i) {
+        el.style.left = (i * width) - ((count) * width) + 'px'
+      })
     }, 1500)
-  }
+  })
 })
-
-}

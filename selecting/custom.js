@@ -1,4 +1,3 @@
-'use strict'
 // Get element by tag name
 document.querySelector('h1').style.backgroundColor = 'pink'
   // Get element by id
@@ -14,6 +13,6 @@ var p = document.querySelectorAll('p')
 p[4].style.color = 'red'
   // Selecting multiple elements
 var h2 = document.querySelectorAll('h2')
-for (var i = 0; i < h2.length; i++) {
-  h2[i].style.color = '#cccccc'
-}
+h2.forEach(function(el) {
+  el.style.color = '#cccccc'
+})
