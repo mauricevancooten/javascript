@@ -1,3 +1,5 @@
+'use strict'
+
 var box, open, close, width
 
 box = document.querySelector('.example')
