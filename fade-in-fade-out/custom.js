@@ -1,3 +1,5 @@
+'use strict'
+
 var box, open, close, opacity
 
 box = document.querySelector('.example')
