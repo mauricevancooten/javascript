@@ -1,5 +1,5 @@
 body {
-  background: #eee;
+  background: #eeeeee;
   font-size: 16px;
   font-family: "Trebuchet MS", Helvetica, sans-serif;
   margin: 0;
@@ -18,16 +18,18 @@ a:hover {
 /* Layout
 ------------------------------------------*/
 
-.sticky {
-  margin: 0 auto;
+.js .sticky {
   position: fixed;
+  right: 0;
+  top: 0;
   height: 100vh;
   overflow: hidden;
   background: #ffffff;
-  right: 0;
-  top: 0;
   border-left: 1px solid #cccccc;
   transition: 1s;
+  display: flex;
+  align-items: center;
+  box-shadow: -2px 0 5px rgba(222, 222, 222, 0.8);
 }
 
 header,
@@ -47,49 +49,47 @@ footer {
 /* Navigation
 ------------------------------------------*/
 
-nav ul {
-  padding: 0;
-  list-style: none;
+nav {
+  width: 100%;
 }
 
-nav ul li a {
+nav ul {
+  list-style: none;
+  padding: 0;
+  border-top: 1px solid #cccccc;
+}
+
+nav a {
   padding: .5em 1em;
   border-bottom: 1px solid #cccccc;
-  width: 100%;
+  text-align: center;
   display: block;
   transition: 1s;
 }
 
-nav ul li a:hover {
+nav a:hover {
   background: pink;
 }
 
-.hamburger {
+.menu {
   position: fixed;
   top: 10px;
   right: .5em;
-  background: url(images/hamburger.svg);
+  background: url(img/burger.svg);
   width: 32px;
   height: 32px;
-}
-
-.hamburger span {
-  clip: rect(1px, 1px, 1px, 1px);
-  position: absolute !important;
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
 }
 
 .close {
   position: absolute;
   top: 6px;
   right: .5em;
-  background-image: url(images/clear.svg);
+  background-image: url(img/clear.svg);
   width: 32px;
   height: 32px;
 }
 
+.menu span,
 .close span {
   clip: rect(1px, 1px, 1px, 1px);
   position: absolute !important;
