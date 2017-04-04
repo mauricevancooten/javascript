@@ -1,24 +1,15 @@
-var circle, redButton, orangeButton
-
-circle = document.querySelector('.example')
-redButton = document.querySelector('.red-button')
-orangeButton = document.querySelector('.orange-button')
+'use strict'
 
 ;(function() { // IIFE
 
-  var colour = 'crimson'
+  var circle, redButton, colour
+
+  circle = document.querySelector('.example')
+  redButton = document.querySelector('.red-button')
+
+  colour = 'crimson'
 
   redButton.addEventListener('click', function() {
-    circle.style.backgroundColor = colour
-  })
-
-})()
-
-;(function() { // IIFE
-
-  var colour = 'orange'
-
-  orangeButton.addEventListener('click', function() {
     circle.style.backgroundColor = colour
   })
 
