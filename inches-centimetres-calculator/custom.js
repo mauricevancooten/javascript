@@ -1,7 +1,9 @@
-var inputInches, button, total
+'use strict'
+
+var inputInches, button, total, centimetres
 
 inputInches = document.querySelector('.inches')
-button = document.querySelector('button')
+button = document.querySelector('.calc')
 total = document.querySelector('.total')
 
 function convertToCentimetres(inches) {
@@ -10,7 +12,7 @@ function convertToCentimetres(inches) {
 }
 
 button.addEventListener('click', function() {
-  result = convertToCentimetres(inputInches.value)
-  result = Math.round(result * 10) / 10
-  total.innerHTML = result + ' cm'
+  centimetres = convertToCentimetres(inputInches.value)
+  centimetres = Math.round(centimetres * 10) / 10
+  total.innerHTML = centimetres + ' cm'
 })
