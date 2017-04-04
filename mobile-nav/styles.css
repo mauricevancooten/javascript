@@ -99,7 +99,7 @@ nav a:hover {
         margin: 0 auto;
         border-top: 0;
     }
-    nav a {
+    nav li {
         margin-right: .5em;
     }
     nav a {

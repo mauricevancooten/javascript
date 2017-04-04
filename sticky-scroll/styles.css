@@ -57,8 +57,11 @@ nav ul {
   display: flex;
 }
 
-nav a {
+nav li {
   margin-right: .5em;
+}
+
+nav a {
   padding: .5em 1em;
   background: #cccccc;
   border-radius: 15px;
