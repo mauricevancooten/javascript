@@ -36,7 +36,7 @@ footer {
 ------------------------------------------*/
 
 nav {
-    
+
     margin-bottom: 0;
     max-height:500px;
     transition:max-height 1s;
@@ -65,7 +65,7 @@ nav a:hover {
 
 .menu {
     float: right;
-    background: url(img/burger.svg);
+    background: url(img/menu.svg);
     width: 32px;
     height: 32px;
     margin-right: 6%;
