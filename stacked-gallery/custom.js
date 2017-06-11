@@ -5,7 +5,7 @@ count = 0;
 
 for (var i = 0; i < image.length; i++) {
 	image[i].addEventListener('click', function () {
-		count++;
-		this.style.zIndex = count;
+		count++
+		this.style.zIndex = count
 	})
 }
