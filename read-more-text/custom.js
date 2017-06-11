@@ -3,10 +3,11 @@
 var button, more, height, visible
 
 more = document.querySelector('.more')
+
+  // Hide content with CSS & Add border to accommodate any padding or margins
+more.style.cssText = 'max-height:0; overflow:hidden; border:1px solid transparent;'
   //  Get height of .more element
-height = more.clientHeight
-  // Hide content with CSS
-more.style.cssText = 'max-height:0; overflow:hidden;'
+height = more.scrollHeight
 
 button = document.createElement('button')
 button.classList.add('show-more')
