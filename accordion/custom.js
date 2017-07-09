@@ -1,9 +1,7 @@
 'use strict'
 
-var accordion, content
-
-accordion = document.querySelectorAll('.accordion')
-content = document.querySelectorAll('.content')
+const accordion = document.querySelectorAll('.accordion')
+const content = document.querySelectorAll('.content')
 
 for (var i = 0; i < content.length; i++) {
   content[i].style.maxHeight = 0
