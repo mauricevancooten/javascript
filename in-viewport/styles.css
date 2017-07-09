@@ -39,6 +39,7 @@ footer {
 .gallery {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 @keyframes slide-up {
