@@ -1,6 +1,6 @@
-var gallery,
+'use strict'
 
-gallery = document.querySelector('.gallery')
+const gallery = document.querySelector('.gallery')
 
 window.addEventListener('scroll', function () {
   if (isAnyPartOfElementInViewport(gallery)) {
