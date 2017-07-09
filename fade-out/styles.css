@@ -1,0 +1,59 @@
+body {
+  background: #eeeeee;
+  font-size: 16px;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  margin: 0;
+}
+
+a {
+  color: crimson;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+}
+
+
+/* Layout
+------------------------------------------*/
+
+header,
+.container,
+footer {
+  margin: 0 auto;
+  width: 88%;
+  max-width: 1080px;
+}
+
+.wrapper {
+  padding: 1em 0;
+  background: #ffffff;
+}
+
+.loader {
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height: 100vh;
+  background:rgba(255,255,255, .8);
+  display:flex;
+  justify-content:center;
+}
+
+/* Animation rotate
+------------------------------------------*/
+
+@keyframes spin {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+.rotate {
+  animation: spin 2s linear infinite;
+}
