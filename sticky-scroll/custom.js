@@ -1,7 +1,7 @@
-var nav, offset
+'use strict'
 
-nav = document.querySelector('.top')
-offset = nav.offsetTop
+const nav = document.querySelector('.top')
+const offset = nav.offsetTop
 // On scroll trigger script
 window.addEventListener('scroll', function() {
 	// When element has reached the top of the window trigger script
