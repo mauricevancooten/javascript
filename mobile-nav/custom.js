@@ -1,7 +1,7 @@
-var nav, navList, link
+'strict'
 
-nav = document.querySelector('.mobile-nav')
-link = document.createElement('a')
+const nav = document.querySelector('.mobile-nav')
+var link = document.createElement('a')
 
 // Insert link after nav
 nav.parentNode.insertBefore(link, nav.nextSibling)
@@ -16,4 +16,4 @@ nav.classList.add('hide-text')
 link.addEventListener('click', function(e) {
   e.preventDefault()
   nav.classList.toggle('hide-text')
-});
+})

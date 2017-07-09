@@ -2,10 +2,8 @@
 
 ;(function() { // IIFE
 
-  var circle, orangeButton
-
-  circle = document.querySelector('.example')
-  orangeButton = document.querySelector('.orange-button')
+  const circle = document.querySelector('.example')
+  const orangeButton = document.querySelector('.orange-button')
 
   var colour = 'orange'
 

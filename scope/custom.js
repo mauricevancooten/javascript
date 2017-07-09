@@ -2,12 +2,10 @@
 
 ;(function() { // IIFE
 
-  var circle, redButton, colour
+  const circle = document.querySelector('.example')
+  const redButton = document.querySelector('.red-button')
 
-  circle = document.querySelector('.example')
-  redButton = document.querySelector('.red-button')
-
-  colour = 'crimson'
+  var colour = 'crimson'
 
   redButton.addEventListener('click', function() {
     circle.style.backgroundColor = colour

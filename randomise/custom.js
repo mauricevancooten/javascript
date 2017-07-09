@@ -1,16 +1,14 @@
 'use strict'
 
-var button, box, randomRad, randomHex, randomDeg
+const btn = document.querySelector('.randomise')
+const box = document.querySelector('.box')
 
-button = document.querySelector('.randomise')
-box = document.querySelector('.box')
-
-button.addEventListener('click', function() {
+btn.addEventListener('click', function() {
   // Random number within range of 50
-  randomRad = Math.floor(Math.random() * 50)
+  const randomRad = Math.floor(Math.random() * 50)
   // Random number within range of 360
-  randomDeg = Math.floor(Math.random() * 360)
+  const randomDeg = Math.floor(Math.random() * 360)
   // (16777215 == ffffff in decimal)
-  randomHex = Math.floor(Math.random() * 16777215).toString(16)
+  const randomHex = Math.floor(Math.random() * 16777215).toString(16)
   box.style.cssText = 'border-radius:' + randomRad + '%; transform: rotate(' + randomDeg + 'deg); background-color: #' + randomHex + ';'
 })

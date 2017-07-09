@@ -36,7 +36,6 @@ footer {
 ------------------------------------------*/
 
 nav {
-
     margin-bottom: 0;
     max-height:500px;
     transition:max-height 1s;
