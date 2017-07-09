@@ -1,14 +1,12 @@
 'use strict'
 
-var menu, close, drawer, nav, html
-
-drawer = document.querySelector('.sticky')
-nav = document.querySelector('nav')
-html = document.querySelector('html')
+const drawer = document.querySelector('.sticky')
+const nav = document.querySelector('nav')
+const html = document.querySelector('html')
 
 // Create link elements, set attributes, classes and content
-menu = document.createElement('a')
-close = document.createElement('a')
+var menu = document.createElement('a')
+var close = document.createElement('a')
 menu.setAttribute('href','#')
 close.setAttribute('href','#')
 menu.classList.add('menu')
