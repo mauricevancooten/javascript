@@ -14,21 +14,21 @@ JavaScript examples manipulating the DOM.
 10. Sticky scroll
 11. In Viewport
 12. Scroll progress bar
-13. Scope
-14. Scope Let
-15. Mobile Nav
-16. Fade out
-17. Fade in fade out
-18. Slide in slide out
-19. Drawer
-20. Push Drawer
-21. Accordion
-22. Tabs
-23. Fetch HTML
-24. Fetch JSON
-25. Carousel
-26. Animated SVG
-
+13. Draw on scroll
+14. Scope
+15. Scope Let
+16. Mobile Nav
+17. Fade out
+18. Fade in fade out
+19. Slide in slide out
+20. Drawer
+21. Push Drawer
+22. Accordion
+23. Tabs
+24. Fetch HTML
+25. Fetch JSON
+26. Carousel
+27. Animated SVG
 
 ## Licence
 
