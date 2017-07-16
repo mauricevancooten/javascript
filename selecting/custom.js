@@ -9,7 +9,7 @@ document.querySelector('.bar').style.backgroundColor = 'pink'
   // Apply multiple CSS statements at once
 document.querySelector('.quux').style.cssText = 'background: pink; color: red;'
   // Apply a class
-document.querySelector('.baz').classList.add("foo")
+document.querySelector('.baz').classList.add('foo')
   // Selecting a specific element within multiple elements
 const p = document.querySelectorAll('p')
 p[4].style.color = 'red'
