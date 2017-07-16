@@ -9,7 +9,7 @@ fetch('data.json')
     response.json()
     .then(function (data) {
       // Build up string with new content.
-      const newContent = ''
+      var newContent = ''
       for (var i = 0; i < data.artists.length; i++) {
         newContent += '<div>'
         newContent += '<img src="' + data.artists[i].work + '" '
