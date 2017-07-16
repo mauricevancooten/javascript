@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Layout</title>
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <h1>Gallery Price Calculator</h1>
+  </header>
+  <div class="wrapper">
+    <div class="container">
+      <p>Formula: x * (1 + ( y / ( 1 - y / 100)) / 100, where x is the artists price and y is the gallery percentage.</p>
+      <div class="calculator">
+        <table>
+          <tr>
+            <td>Artists Price: $</td>
+            <td>
+              <input class="price" type="text">
+            </td>
+          </tr>
+          <tr>
+            <td>Gallery Commission: %</td>
+            <td>
+              <input class="percent" type="text">
+            </td>
+          </tr>
+          <tr>
+            <td>Gallery Commission: $</td>
+            <td class="commission"></td>
+          </tr>
+          <tr>
+            <td>Gallery Total: $</td>
+            <td class="total"></td>
+          </tr>
+        </table>
+        <button class="calc">Calculate</button>
+      </div>
+    </div>
+    <!-- .container-->
+  </div>
+  <!-- .wrapper-->
+  <footer>
+    <small><a href="https://opensource.org/licenses/MIT">MIT</a></small>
+  </footer>
+  <script src="custom.js"></script>
+</body>
+
+</html>
