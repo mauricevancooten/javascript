@@ -1,14 +1,11 @@
 'use strict'
 
-;(function() { // IIFE
+{
+  const circle = document.getElementById('circle')
+  const redBtn = document.getElementById('red-btn')
+  let colour = 'crimson'
 
-  const circle = document.querySelector('.example')
-  const redButton = document.querySelector('.red-button')
-
-  var colour = 'crimson'
-
-  redButton.addEventListener('click', function() {
+  redBtn.addEventListener('click', function() {
     circle.style.backgroundColor = colour
   })
-
-})()
+}
