@@ -1,11 +1,13 @@
-var image, count
+'use strict'
 
-image = document.querySelector('.gallery').querySelectorAll('img')
-count = 0;
+const image = document.getElementById('gallery').querySelectorAll('img')
+let count = 0;
 
-for (var i = 0; i < image.length; i++) {
-	image[i].addEventListener('click', function () {
-		count++
-		this.style.zIndex = count
-	})
+for (let i = 0; i < image.length; i++) {
+	image[i].addEventListener('click', toFront)
+}
+
+function toFront() {
+	count++
+	this.style.zIndex = count
 }

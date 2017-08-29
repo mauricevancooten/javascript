@@ -35,12 +35,12 @@ footer {
 /* Gallery
 ------------------------------------------*/
 
-.gallery {
+#gallery {
   position: relative;
   min-height:650px;
 }
 
-.gallery img {
+#gallery img {
   position: absolute;
 }
 
