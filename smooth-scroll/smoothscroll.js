@@ -24,13 +24,13 @@
     /*
      * globals
      */
-    var Element = w.HTMLElement || w.Element;
-    var SCROLL_TIME = 468;
+    let Element = w.HTMLElement || w.Element;
+    let SCROLL_TIME = 468;
 
     /*
      * object gathering original scroll methods
      */
-    var original = {
+    let original = {
       scroll: w.scroll || w.scrollTo,
       scrollBy: w.scrollBy,
       elScroll: Element.prototype.scroll || scrollElement,
@@ -40,7 +40,7 @@
     /*
      * define timing method
      */
-    var now = w.performance && w.performance.now
+    let now = w.performance && w.performance.now
       ? w.performance.now.bind(w.performance) : Date.now;
 
     /**
@@ -98,14 +98,14 @@
      * @returns {Node} el
      */
     function findScrollableParent(el) {
-      var isBody;
-      var hasScrollableSpace;
-      var hasVisibleOverflow;
+      let isBody;
+      let hasScrollableSpace;
+      let hasVisibleOverflow;
 
       do {
         el = el.parentNode;
 
-        // set condition variables
+        // set condition letiables
         isBody = el === d.body;
         hasScrollableSpace =
           el.clientHeight < el.scrollHeight ||
@@ -125,11 +125,11 @@
      * @param {Object} context
      */
     function step(context) {
-      var time = now();
-      var value;
-      var currentX;
-      var currentY;
-      var elapsed = (time - context.startTime) / SCROLL_TIME;
+      let time = now();
+      let value;
+      let currentX;
+      let currentY;
+      let elapsed = (time - context.startTime) / SCROLL_TIME;
 
       // avoid elapsed times higher than one
       elapsed = elapsed > 1 ? 1 : elapsed;
@@ -156,11 +156,11 @@
      * @param {Number} y
      */
     function smoothScroll(el, x, y) {
-      var scrollable;
-      var startX;
-      var startY;
-      var method;
-      var startTime = now();
+      let scrollable;
+      let startX;
+      let startY;
+      let method;
+      let startTime = now();
 
       // define scroll context
       if (el === d.body) {
@@ -256,7 +256,7 @@
 
     // Element.prototype.scrollBy
     Element.prototype.scrollBy = function() {
-      var arg0 = arguments[0];
+      let arg0 = arguments[0];
 
       if (typeof arg0 === 'object') {
         this.scroll({
@@ -281,9 +281,9 @@
       }
 
       // LET THE SMOOTHNESS BEGIN!
-      var scrollableParent = findScrollableParent(this);
-      var parentRects = scrollableParent.getBoundingClientRect();
-      var clientRects = this.getBoundingClientRect();
+      let scrollableParent = findScrollableParent(this);
+      let parentRects = scrollableParent.getBoundingClientRect();
+      let clientRects = this.getBoundingClientRect();
 
       if (scrollableParent !== d.body) {
         // reveal element inside parent
