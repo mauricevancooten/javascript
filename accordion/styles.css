@@ -31,7 +31,6 @@ footer {
   background: #ffffff;
 }
 
-
 /* Accordion
 ------------------------------------------*/
 
@@ -39,34 +38,34 @@ footer {
   font-size: 1em;
   padding: .5em 1em;
   background: #eeeeee;
-  cursor: pointer;
-  width: 100%;
-  outline: none;
-  border: none;
-  margin-bottom: .2em;
+  cursor:pointer;
+  width:100%;
+  border:none;
+  outline:none;
+  margin-bottom:.2em;
 }
 
 .accordion:hover {
-  background: pink;
-}
-
-.active:hover {
-  background: #eeeeee;
-  cursor: default;
+  background:pink;
 }
 
 .content {
-  /*max-height: 0;*/
+  /* max-height: 0; */
   overflow: hidden;
-  transition: .6s ease-in-out;
+  transition: .6s;
 }
 
 .accordion:after {
-  content: '\02795';
+  content: "\02795";
   font-size: .8em;
-  float: left;
+  float:left;
 }
 
-.accordion.active:after {
-  content: "\2796";
+.active:after {
+  content:"\2796";
+}
+
+.active:hover {
+  cursor:default;
+  background: #eeeeee;
 }
