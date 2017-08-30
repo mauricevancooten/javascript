@@ -71,7 +71,7 @@ nav a:hover {
 /* Scroll bar
 ------------------------------------------*/
 
-.scroll-bar {
+#scroll-bar {
   height: 4px;
   background: lime;
 }
