@@ -43,7 +43,7 @@ td {
   padding: .5em 0 .5em .7em;
 }
 
-.calculator {
+#calculator {
   max-width: 266px;
   display: flex;
   flex-direction: column;

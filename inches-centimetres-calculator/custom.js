@@ -1,16 +1,16 @@
 'use strict'
 
-const inputInches = document.querySelector('.inches')
-const btn = document.querySelector('.calc')
-const total = document.querySelector('.total')
+const inputInches = document.getElementById('inches')
+const btn = document.getElementById('calc')
+const total = document.getElementById('total')
 
 function convertToCentimetres(inches) {
   const result = inches / .39370079
   return result
 }
 
-btn.addEventListener('click', function() {
-  var centimetres = convertToCentimetres(inputInches.value)
+btn.addEventListener('click', () => {
+  let centimetres = convertToCentimetres(inputInches.value)
   centimetres = Math.round(centimetres * 10) / 10
-  total.innerHTML = centimetres + ' cm'
+  total.innerHTML = `${centimetres} cm`
 })
