@@ -35,13 +35,10 @@ footer {
 /* Slide show
 ------------------------------------------*/
 
-.slide-show {
+#slide-show {
   display: flex;
   max-width: 100%;
   overflow: hidden;
-}
-
-.slide-show {
   position: relative;
 }
 
@@ -60,16 +57,16 @@ footer {
   right: 20px;
 }
 
-.slide-show img {
+#slide-show img {
   max-width: 100%;
   height: auto;
 }
 
-.slide-show div {
+#slide-show div {
   width: 100%;
   position: absolute;
 }
 
-.slide-show {
+#slide-show {
   height: 100%;
 }
