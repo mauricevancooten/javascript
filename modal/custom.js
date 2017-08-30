@@ -1,27 +1,26 @@
 'use strict'
 
-const modal = document.querySelector('.overlay')
-const modalContent = document.querySelector('.overlay-content')
+const modal = document.getElementById('overlay')
+const modalContent = document.getElementById('overlay-content')
 const html = document.querySelector('html')
 
-// Add js class to html element for accessibility (see CSS)
 html.classList.add('js')
 
-// Create button elements
-var open = document.createElement('a')
-var close = document.createElement('a')
+// Create link elements
+let open = document.createElement('a')
+let close = document.createElement('a')
 
-// Add classes and text to buttons
+// Add classes attributes and text to links
 open.classList.add('show')
-open.setAttribute('href', '#')
+open.setAttribute('href','#')
 open.innerHTML = 'Open'
 close.classList.add('close')
-close.setAttribute('href', '#')
+close.setAttribute('href','#')
 close.innerHTML = 'Close'
 
-// Insert close buton inside .overlay-content element
+// Insert close button inside .overlay-content element
 modalContent.appendChild(close)
-// Insert open button before .overlay element
+// Insert open button before .overlay elements
 modal.parentNode.insertBefore(open, modal)
 
 open = document.querySelector('.show')
@@ -29,12 +28,12 @@ close = document.querySelector('.close')
 
 modal.classList.add('hide-text')
 
-open.addEventListener('click', function(e) {
-  e.preventDefault
-  modal.classList.remove("hide-text")
-});
+open.addEventListener('click', (e) => {
+  e.preventDefault()
+  modal.classList.remove('hide-text')
+})
 
-close.addEventListener('click', function(e) {
-  e.preventDefault
+close.addEventListener('click', (e) => {
+  e.preventDefault()
   modal.classList.add('hide-text')
-});
+})

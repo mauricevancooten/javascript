@@ -23,7 +23,7 @@ header,
 footer {
   margin: 0 auto;
   width: 88%;
-  max-width: 960px;
+  max-width: 1080px;
 }
 
 .wrapper {
@@ -31,33 +31,48 @@ footer {
   background: #ffffff;
 }
 
-
 /* Overlay
 ------------------------------------------*/
 
-.js .overlay {
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1000;
-  background: rgba(0, 0, 0, .5);
+.js #overlay {
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  z-index:1000;
+  background:rgba(0, 0, 0, 0.5);
   transition: opacity 1s;
 }
 
-.js .overlay-content {
+.js #overlay-content {
   width: 90%;
   margin: 2em auto;
   background: #ffffff;
-  padding: 1em;
+  padding:2em 1em;
+  box-sizing:border-box;
+  position:relative;
 }
 
 .js .hide-text {
   clip: rect(1px, 1px, 1px, 1px);
-  position: absolute !important;
+  position:absolute !important;
   height: 1px;
   width: 1px;
-  overflow: hidden;
-  opacity: 0;
+  overflow:hidden;
+  opacity:0;
+}
+
+.close {
+  background: url(img/close.svg);
+  width:32px;
+  height:32px;
+  display:block;
+  position:absolute;
+  right:.5em;
+  top:.5em;
+  /* hide text */
+  text-indent: 110%;
+  white-space: nowrap;
+  overflow:hidden;
 }
