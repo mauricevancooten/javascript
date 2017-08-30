@@ -34,7 +34,7 @@ footer {
 /* Animated box
 ------------------------------------------*/
 
-.example {
+#box {
   width: 0;
   height: 400px;
   background: pink;

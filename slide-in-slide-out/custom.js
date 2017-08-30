@@ -1,13 +1,13 @@
 'use strict'
 
-var box, open, close, width
+const box = document.getElementById('box')
+const open = document.getElementById('open')
+const close = document.getElementById('close')
 
-box = document.querySelector('.example')
-open = document.querySelector('.show')
-close = document.querySelector('.hide')
+let  width
 // Slide out function
 function slideOut(el) {
-  width = 0;
+  width = 0
 
   function slide() {
     if (width < 250) {
@@ -43,10 +43,10 @@ function slideIn(el) {
   requestAnimationFrame(slide)
 }
 
-open.addEventListener('click', function() {
+open.addEventListener('click', () => {
   slideOut(box)
 })
 
-close.addEventListener('click', function() {
+close.addEventListener('click', () => {
   slideIn(box);
 })

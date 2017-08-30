@@ -1,13 +1,13 @@
 'use strict'
 
-var box, open, close, opacity
+const box = document.getElementById('box')
+const open = document.getElementById('open')
+const close = document.getElementById('close')
 
-box = document.querySelector('.example')
-open = document.querySelector('.show')
-close = document.querySelector('.hide')
+let opacity
 
 box.style.opacity = 0
-  // Fade in function
+// Fade in function
 function fadeIn(el) {
   opacity = 0
 
@@ -27,6 +27,7 @@ function fadeIn(el) {
   }
   requestAnimationFrame(fade)
 }
+
 // Fade out function
 function fadeOut(el) {
   opacity = 1
@@ -48,10 +49,10 @@ function fadeOut(el) {
   requestAnimationFrame(fade)
 }
 
-open.addEventListener('click', function() {
+open.addEventListener('click', () => {
   fadeIn(box)
 })
 
-close.addEventListener('click', function() {
+close.addEventListener('click', () => {
   fadeOut(box)
 })
