@@ -1,7 +1,7 @@
 'use strict'
 
-const loader = document.querySelector('.loader')
+const loader = document.getElementById('loader')
 
-setTimeout(function () {
+setTimeout( () => {
   loader.style.cssText = 'transition: 1s; opacity:0;'
-},3000)
+}, 3000)

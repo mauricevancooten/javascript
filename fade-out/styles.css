@@ -31,7 +31,7 @@ footer {
   background: #ffffff;
 }
 
-.loader {
+#loader {
   position:fixed;
   top:0;
   left:0;
@@ -46,9 +46,6 @@ footer {
 ------------------------------------------*/
 
 @keyframes spin {
-  from {
-    transform: rotate(0);
-  }
   to {
     transform: rotate(-360deg);
   }
