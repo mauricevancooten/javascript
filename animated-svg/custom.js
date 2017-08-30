@@ -1,10 +1,10 @@
-var el, cross, visible
+'use strict'
 
-el = document.querySelector('.turn')
-cross = document.querySelector('#cross')
-visible = true
+const el = document.querySelector('.turn')
+const cross = document.getElementById('cross')
+let visible = true
 
-cross.addEventListener('click', function(){
+cross.addEventListener('click', () => {
 	if ( visible ) {
 		el.classList.remove('turn-2')
 		el.classList.add('turn')
@@ -13,5 +13,5 @@ cross.addEventListener('click', function(){
 		el.classList.remove('turn')
 		el.classList.add('turn-2')
 	}
-	visible = !visible				  
+	visible = !visible
 })
