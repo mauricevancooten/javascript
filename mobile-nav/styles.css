@@ -1,18 +1,19 @@
 body {
-    background: #eeeeee;
-    font-size: 16px;
-    font-family: "Trebuchet MS", Helvetica, sans-serif;
-    margin: 0;
+  background: #eeeeee;
+  font-size: 16px;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  margin: 0;
 }
 
 a {
-    color: crimson;
-    text-decoration: none;
+  color: crimson;
+  text-decoration: none;
 }
 
 a:hover {
-    color: red;
+  color: red;
 }
+
 
 
 /* Layout
@@ -21,87 +22,83 @@ a:hover {
 header,
 .container,
 footer {
-    margin: 0 auto;
-    width: 88%;
-    max-width: 1080px;
+  margin: 0 auto;
+  width: 88%;
+  max-width: 1080px;
 }
 
 .wrapper {
-    background: #ffffff;
-    padding: 1em 0;
+  background: #ffffff;
+  padding: 1em 0;
 }
+
 
 
 /* Navigation
 ------------------------------------------*/
 
 nav {
-    margin-bottom: 0;
-    max-height:500px;
-    transition:max-height 1s;
-    overflow:hidden;
+  margin-bottom: 0;
+  max-height: 500px;
+  overflow: hidden;
 }
 
 nav ul {
-    border-top: 1px solid #ffffff;
-    list-style:none;
-    padding:0;
-    margin-bottom:0;
+  border-top: 1px solid #ffffff;
+  list-style: none;
+  padding: 0;
+  margin-bottom: 0;
 }
 
 nav a {
-    background: #cccccc;
-    padding: .5em 1em;
-    display: block;
-    text-align: center;
-    transition: 1s;
-    border-bottom: 1px solid #ffffff;
+  background: #cccccc;
+  padding: .5em 1em;
+  display: block;
+  text-align: center;
+  transition: 1s;
+  border-bottom: 1px solid #ffffff;
 }
 
 nav a:hover {
-    background: pink;
+  background: pink;
 }
 
 .menu {
-    float: right;
-    background: url(img/menu.svg);
-    width: 32px;
-    height: 32px;
-    margin-right: 6%;
+  float: right;
+  background: url(img/menu.svg);
+  width: 32px;
+  height: 32px;
+  margin-right: 6%;
 }
 
 .menu span {
-    clip: rect(1px, 1px, 1px, 1px);
-    position: absolute !important;
-    height: 1px;
-    width: 1px;
-    overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
 }
 
 .hide-text {
-    overflow: hidden;
-    max-height:0;
+  overflow: hidden;
+  max-height: 0;
 }
 
 @media screen and (min-width:48em) {
-    .menu {
-        display: none;
-    }
-    .hide-text {
-        max-height:500px;
-        overflow: inherit;
-    }
-    nav ul {
-        display: flex;
-        width:88%;
-        max-width: 1080px;
-        margin: 0 auto;
-        border-top: 0;
-    }
-    nav li {
-        margin-right: .5em;
-    }
-    nav a {
-        border-bottom: 0;
-    }
+  .menu {
+    display: none;
+  }
+  nav ul {
+    display: flex;
+    width: 88%;
+    max-width: 1080px;
+    margin: 0 auto;
+    border-top: 0;
+  }
+  nav li {
+    margin-right: .5em;
+  }
+  nav a {
+    border-bottom: 0;
+  }
 }
