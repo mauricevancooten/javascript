@@ -47,7 +47,7 @@ tr:last-child td:last-child {
   border-top: 2px solid black;
 }
 
-.calculator {
+#calculator {
   max-width: 376px;
   display: flex;
   flex-direction: column;
