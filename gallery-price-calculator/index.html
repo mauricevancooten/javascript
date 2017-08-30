@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Layout</title>
+  <title>JavaScript Gallery Price Calculator</title>
   <meta name="robots" content="noindex, nofollow">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="styles.css">
@@ -11,35 +11,35 @@
 
 <body>
   <header>
-    <h1>Gallery Price Calculator</h1>
+    <h1>JavaScript Gallery Price Calculator</h1>
   </header>
   <div class="wrapper">
     <div class="container">
-      <p>Formula: x * (1 + ( y / ( 1 - y / 100) / 100), where x is the artists price and y is the gallery percentage.</p>
-      <div class="calculator">
+      <p>Formula: x * (1 + ( y / (1 - y / 100) / 100)), where x is the artists price and y is the gallery percentage.</p>
+      <div id="calculator">
         <table>
           <tr>
             <td>Artists Price: $</td>
             <td>
-              <input class="price" type="text">
+              <input id="price" type="text">
             </td>
           </tr>
           <tr>
             <td>Gallery Commission: %</td>
             <td>
-              <input class="percent" type="text">
+              <input id="percent" type="text">
             </td>
           </tr>
           <tr>
             <td>Gallery Commission: $</td>
-            <td class="commission"></td>
+            <td id="commission"></td>
           </tr>
           <tr>
             <td>Gallery Total: $</td>
-            <td class="total"></td>
+            <td id="total"></td>
           </tr>
         </table>
-        <button class="calc">Calculate</button>
+        <button id="calc">Calculate</button>
       </div>
     </div>
     <!-- .container-->
