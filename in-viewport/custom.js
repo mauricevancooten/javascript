@@ -2,7 +2,7 @@
 
 const gallery = document.querySelector('.gallery')
 
-window.addEventListener('scroll', function () {
+window.addEventListener('scroll', () => {
   if (isAnyPartOfElementInViewport(gallery)) {
     gallery.classList.remove('is-paused')
   }

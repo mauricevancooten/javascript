@@ -40,6 +40,7 @@ footer {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  animation: slide-up 3s forwards;
 }
 
 @keyframes slide-up {
@@ -51,10 +52,6 @@ footer {
     transform: translateY(0);
     margin-bottom: 0;
   }
-}
-
-.gallery {
-  animation: slide-up 3s forwards;
 }
 
 .is-paused {
