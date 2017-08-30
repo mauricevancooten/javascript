@@ -39,7 +39,7 @@ header, .container, footer {
   top:20;
 }
 
-.line {
+#line {
   fill: none;
   stroke: red;
   stroke-width: 2px;
