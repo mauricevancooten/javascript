@@ -30,16 +30,3 @@ footer {
   padding: 1em 0;
   background: #ffffff;
 }
-
-
-/* Hide text
-------------------------------------------*/
-
-h1 {
-  max-height: 37px;
-  overflow: hidden;
-}
-
-.hide-text {
-  max-height: 0;
-}
